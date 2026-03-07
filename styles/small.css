@@ -170,9 +170,9 @@ section{
 .course-category {
     display: flex;
     flex-direction: row;
-    flex: 1;
+    justify-content: space-around;
     gap: 0.5rem;
-    max-width: 90%;
+    max-width: 100%;
     margin: 1rem auto;
 
 }
@@ -181,13 +181,14 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+
     gap: 1rem 0;
-    max-width: 300px;
+    max-width: 600px;
     margin: 1rem auto 2rem auto;
 }
 
 .course-button button{
-    width: 90%;
+    width: 100%;
     padding: 0.5rem 1rem;
 }
 
