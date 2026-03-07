@@ -2,8 +2,11 @@
 :root {
     --primary-color: #23053E;
     --secondary-color: #3D2B56;
+    --soft1-color: #A898E1;
+    --soft2-color: #C5BAE9;
     --overlay-color: #EDEDED;
     --accent1-color: #C5F5B2;
+    --accent2-color: #92E096;
     --text-color-light: #FEFEFE;
     --text-color-dark: #000000;
     --heading-font: "Lora", serif;
@@ -23,7 +26,7 @@ header {
     display: grid;
     grid-template-columns: 24px auto 44px;
     align-items: end;
-    padding: 5px 0 5px 10px;
+    padding: 5px 0 5px 0;
     border-bottom: solid 1px #ddd;
     column-gap: 8px;
     background-color: var(--primary-color);
@@ -34,11 +37,13 @@ header img {
     display: block;
     width: 100%;
     height: auto;
+    margin-left: 10px;
 }
 
 header span {
     font-size: 1.2rem;
-    color: var(--accent1-color)
+    color: var(--accent2-color);
+    padding-left: 10px;
 }
 
 /* Hamburger button */
@@ -73,6 +78,7 @@ header span {
 
 .navigation.show {
     display: block;
+    background-color:var(--soft1-color);
 }
 
 /* --------- */
@@ -85,37 +91,112 @@ header span {
 
 .navigation a {
     display: block;
-    padding: 0.85rem 10px;
+    padding: 0.85rem;
     color: white;
     text-decoration: none;
     border-bottom: solid 1px #ddd;
 }
 
 .navigation li.current {
-    background-color: var(--secondary-color);
+    background-color: var(--accent1-color);
+    
+}
+
+.navigation li.current a {
+    color: var(--text-color-dark);
 }
 
 .navigation a:hover {
-    background-color: red;
+    background-color: var(--accent1-color);
+    color: var(--text-color-dark)
 }
 
-h1 {
-    margin-left: 10px;
-    color: var(--secondary-color)
-}
+/*Main*/
 
-/*Footer*/
-footer {
-    background-color: var(--primary-color);
+main{ 
     padding: 1rem 10px;
     text-align: center;
 }
+
+h1 {
+    text-align: left;
+    color: var(--secondary-color);
+    font-family: var(--heading-font);
+}
+
+section{
+    margin: 1.75rem 0;
+}
+
+
+.about p {
+    max-width: 60ch;  /*60 chars max*/
+    text-align: left;
+    margin-left: 10px; 
+}
+
+
+.section-title {
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    background-color: var(--soft1-color);
+    color: var(--text-color-dark);
+    margin-bottom: 1.25rem;
+    padding: 0.5rem 0;
+}
+
+.picture img{
+    display: block;
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    margin: 15px auto;
+}
+
+.course-buttons button {
+    background-color: var(--soft2-color);
+    border: var(--secondary-color) solid 2px;
+    width: 132px;
+    height: 44px;
+    border-radius: 8px;
+}
+
+.course-category {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 0.5rem;
+    max-width: 90%;
+    margin: 1rem auto;
+
+}
+
+.course-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem 0;
+    max-width: 300px;
+    margin: 1rem auto 2rem auto;
+}
+
+.course-button button{
+    width: 90%;
+    padding: 0.5rem 1rem;
+}
+
+
+.course-buttons button.course-completed{
+    background-color: var(--secondary-color);
+    color: var(--accent2-color);
+}
+
 
 .social {
     display: flex;
     justify-content: center;
     column-gap: 10px;
-    margin-bottom: 1rem;
+    margin: 2rem auto 1rem auto;
 }
 
 .social a {
@@ -138,6 +219,17 @@ footer {
     background-color: var(--accent1-color);
 }
 
+
+
+/*Footer*/
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem 10px; 
+    text-align: center;
+}
+
+
+
 footer p {
     margin: 0.25rem 0;
     font-size: 0.9rem;
@@ -146,5 +238,5 @@ footer p {
 
 footer span {
     font-weight: bold;
-    color: var(--text-color-light)
+    color: var(--text-color-light);
 }

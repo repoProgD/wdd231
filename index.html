@@ -7,9 +7,8 @@
     <title>WDD 231- Web Frontend Development I - Diego Ledesma</title>
     <meta name="author" content="Diego Ledesma">
     <meta name="description"
-        content="WDD 231 - Web Frontend Development I first learning activity, by Diego Ledesma.">
+        content="WDD 231 - Web Frontend Development I first assignment, by Diego Ledesma.">
 
-    
     <!-- Normalize has to preced other style files-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -21,6 +20,7 @@
         rel="stylesheet">
 
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/course-array.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
 
 </head>
@@ -28,14 +28,14 @@
 <body>
     <header>
         <img src="images/logo.svg" alt="site logo" width="1" height="1">
-        <span>Site Name</span>
+        <span>Chem-Vis</span>
         <button id="nav-button" class="hamburger" aria-label="navigation"></button>
 
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="#">News & Events</a></li>
-                <li ><a href="#">Dedicated Temples</a></li>
-                <li><a href="#">Announced Temples</a></li>
+                <li class="nav-button current"><a href="index.html">Home</a></li>
+                <li class="nav-button"><a href="chamber.html">Chamber</a></li>
+                <li class="nav-button"><a href="final.html">Final</a></li>
             </ul>
         </nav>
 
@@ -43,18 +43,38 @@
 
     <main>
 
-        <h1>Dedicated Temples</h1>
+        <h1>Home</h1>
+        <section class="about">
+            <h2 class="section-title">About Me</h2>
+            <p>My name is Diego Ledesma, I am from Buenos Aires, Argentina. I have a background in Economics and Education and I am interested in learning software development to create interactive visualizations of scientific concepts. I am excited to learn more about HTML, CSS, and JavaScript in this course and apply those skills to my personal project.</p>
+        </section>
+        <section class="picture">
+            <h2 class="section-title">Student Photo</h2>
+            <img src="images/my-pic.webp" alt="A photo of the student" width="200" height="200">
+        </section>
+        <section class="courses-card">
+            <h2 class="section-title">Web Certificate Courses</h2>
+            <div class="course-buttons course-category" >
+                <button id="all">All</button>
+                <button id="wdd">WDD</button>
+                <button id="cse">CSE</button>
+            </div>
+
+            <div class="course-buttons course-button" id="courses-dynamic-buttons"></div>
+            <p id="total-credits"></p>
+        
+            <div class="social">
+                <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="" width="16" height="16"></a>
+                <a href="https://github.com"" target=" _blank"><img src="images/github.svg" alt="" width="16" height="16"></a>
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="" width="16" height="16"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="" width="16" height="16"></a>
+            </div>
+        </section>
+       
 
     </main>
 
     <footer>
-        <div class="social">   
-            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="" width="16" height="16"></a>
-            <a href="https://github.com"" target="_blank"><img src="images/github.svg" alt="" width="16" height="16"></a>
-            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="" width="16" height="16"></a>
-            <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="" width="16" height="16"></a>
-        </div>
-
         <p> © <span id="currentyear"></span> | Diego Ledesma | Argentina</p>
         <p><span id="lastModified"></span></p>
     </footer>
