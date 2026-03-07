@@ -27,7 +27,7 @@ header {
     grid-template-columns: 24px auto 44px;
     align-items: end;
     padding: 5px 0 5px 0;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--overlay-color);
     column-gap: 8px;
     background-color: var(--primary-color);
 
@@ -64,7 +64,7 @@ header span {
 .hamburger.show::before {
     content: "\2715";
     /* Unicode for close icon*/
-    color: red;
+    color: #110000;
 }
 
 
@@ -92,9 +92,9 @@ header span {
 .navigation a {
     display: block;
     padding: 0.85rem;
-    color: white;
+    color: var(--text-color-dark);
     text-decoration: none;
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--overlay-color);
 }
 
 .navigation li.current {
@@ -155,6 +155,7 @@ section{
 
 .course-buttons button {
     background-color: var(--soft2-color);
+    color: var(--text-color-dark);
     border: var(--secondary-color) solid 2px;
     width: 132px;
     height: 44px;
@@ -205,8 +206,8 @@ section{
     align-items: center;
     width: 44px;
     height: 44px;
-    background-color: #ddd;
-    border: var(--accent1-color) solid 1px;
+    background-color: var(--overlay-color);
+    border: var(--secondary-color) solid 1px;
     border-radius: 4px;
 }
 
