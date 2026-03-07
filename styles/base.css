@@ -64,7 +64,7 @@ header span {
 .hamburger.show::before {
     content: "\2715";
     /* Unicode for close icon*/
-    color: #110000;
+    color: #ff0000;
 }
 
 
@@ -120,7 +120,7 @@ main{
 
 h1 {
     text-align: left;
-    color: var(--secondary-color);
+    color: var(--text-color-dark);
     font-family: var(--heading-font);
 }
 
