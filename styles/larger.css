@@ -29,7 +29,6 @@
 
     .nav-button{
         margin-top: 0.5rem;
-        background-color: var(--soft1-color);
         border: solid 1px var(--overlay-color);
         height: 30px;
         display: flex;

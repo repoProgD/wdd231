@@ -68,17 +68,24 @@ header span {
 }
 
 
+
+
 /*Add a CSS rule to hide the nav element*/
 .navigation {
     display: none;
     grid-column: 1 / -1;
 }
 
+.nav-button {
+    margin-top: 0.1rem;
+    background-color: var(--soft1-color);
+}
+
 /*Add a CSS rule to show the nav element when it has the class of 'show'*/
 
 .navigation.show {
     display: block;
-    background-color:var(--soft1-color);
+
 }
 
 /* --------- */
@@ -88,6 +95,7 @@ header span {
     margin: 0;
     padding: 0;
 }
+
 
 .navigation a {
     display: block;
