@@ -76,7 +76,7 @@ header span {
 
 .nav-button {
     margin-top: 0.1rem;
-    background-color: var(--soft1-color);
+    background-color: var(--soft2-color);
 }
 
 /*Add a CSS rule to show the nav element when it has the class of 'show'*/
@@ -99,22 +99,21 @@ header span {
     display: block;
     padding: 0.85rem;
     color: var(--text-color-dark);
+    font-weight: 500;
     text-decoration: none;
     border-bottom: solid 1px var(--overlay-color);
 }
 
 .navigation li.current {
     background-color: var(--accent1-color);
-    
 }
 
-.navigation li.current a {
+/*.navigation li.current a {
     color: var(--text-color-dark);
-}
+}*/
 
 .navigation a:hover {
     background-color: var(--accent1-color);
-    color: var(--text-color-dark)
 }
 
 /*Main*/
