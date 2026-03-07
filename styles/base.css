@@ -26,7 +26,7 @@ header {
     display: grid;
     grid-template-columns: 24px auto 44px;
     align-items: end;
-    padding: 5px 0 5px 0;
+    padding-top: 5px;
     border-bottom: solid 1px var(--overlay-color);
     column-gap: 8px;
     background-color: var(--primary-color);
@@ -126,7 +126,6 @@ main{
 
 h1 {
     text-align: left;
-    color: var(--text-color-dark);
     font-family: var(--heading-font);
 }
 
@@ -138,7 +137,8 @@ section{
 .about p {
     max-width: 60ch;  /*60 chars max*/
     text-align: left;
-    margin-left: 10px; 
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 
