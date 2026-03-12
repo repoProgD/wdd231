@@ -1,0 +1,29 @@
+{
+    "member_family": "Perez",
+    "move_in_date": "2018-05-17",
+    "family_size" : 4,
+    "visited_by_bishopric": true,
+    "family_members": [
+        {
+            "name": "Carlos",
+            "gender": "Male",
+            "birthdate": "1970-01-01"
+        },
+        {
+            "name": "Ana",
+            "gender": "Female",
+            "birthdate": "1972-02-02"
+        },
+        {
+            "name": "Jose",
+            "gender": "Male",
+            "birthdate": "1998-03-03"
+        },
+        {
+            "name": "Andres",
+            "gender": "Male",
+            "birthdate": "2000-04-04"
+        }
+    ]
+
+}
