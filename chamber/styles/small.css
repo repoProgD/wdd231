@@ -1,0 +1,270 @@
+/* General rules*/
+:root {
+    --primary-color: #23053E;
+    --secondary-color: #3D2B56;
+    --soft1-color: #A898E1;
+    --soft2-color: #C5BAE9;
+    --overlay-color: #EDEDED;
+    --accent1-color: #C5F5B2;
+    --accent2-color: #92E096;
+    --text-color-light: #FEFEFE;
+    --text-color-dark: #000000;
+    --heading-font: "Lora", serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+/*Header*/
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding-top: 5px;
+    border-bottom: solid 1px var(--overlay-color);
+    column-gap: 8px;
+    background-color: var(--primary-color);
+
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--accent2-color);
+    padding-left: 10px;
+}
+
+/* Hamburger button */
+
+.hamburger {
+    background: none;
+    border: none;
+    color: var(--accent1-color);
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    /* Unicode for hamburger icon*/
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\2715";
+    /* Unicode for close icon*/
+    color: #ff0000;
+}
+
+
+/*Add a CSS rule to hide the nav element*/
+.navigation {
+    display: none;
+    grid-column: 1 / -1;
+}
+
+.nav-button {
+    margin-top: 0.1rem;
+    background-color: var(--soft2-color);
+}
+
+/*Add a CSS rule to show the nav element when it has the class of 'show'*/
+
+.navigation.show {
+    display: block;
+
+}
+
+/* --------- */
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.navigation a {
+    display: block;
+    padding: 0.85rem;
+    color: var(--text-color-dark);
+    font-weight: 500;
+    text-decoration: none;
+    border-bottom: solid 1px var(--overlay-color);
+}
+
+.navigation li.current {
+    background-color: var(--accent1-color);
+}
+
+/*.navigation li.current a {
+    color: var(--text-color-dark);
+}*/
+
+.navigation a:hover {
+    background-color: var(--accent1-color);
+}
+
+/*Main*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    background-color: var(--secondary-color);
+    color: var(--text-color-light);
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    margin: 0 auto;
+    padding: 0.5rem;
+    max-width: 700px;
+    background-color: var(--overlay-color);
+    font-family: var(--body-font);
+}
+
+.menu {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: var(--secondary-color);
+    text-align: center;
+
+    button {
+        padding: 0.5rem 1rem;
+        font-weight: 700;
+    }
+}
+
+section {
+    border: 1px solid  #999999;
+    padding: 0.5rem;
+    background-color: var(--accent1-color);
+
+    a {
+        font-size: 0.85rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+    }
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 5px;
+    align-items: center;
+
+    section {
+        text-align: center;
+        & > * {
+            margin: 0.1rem;
+        }
+    }
+
+    img {
+        border: 1px solid #fff;
+        box-shadow: 0 0 1rem #555;
+        margin: 0.75rem auto;
+    }
+}
+
+.grid h2{
+    font-size: 1.5rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+
+    section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+
+        & > * {
+            margin: 0 1rem;
+        }
+
+        img {
+            display: none;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        &:nth-child(even) {
+            background-color: var(--soft2-color);
+        }
+    }
+}
+
+img {
+    width: auto;
+    height: 150px;
+}
+
+
+/*Footer*/
+footer {
+    background-color: var(--primary-color);
+    padding: 1rem 10px; 
+    text-align: center;
+}
+
+
+
+footer p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: var(--text-color-light);
+}
+
+footer span {
+    font-weight: bold;
+    color: var(--text-color-light);
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    margin: 2rem auto 1rem auto;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    background-color: var(--overlay-color);
+    border: var(--secondary-color) solid 1px;
+    border-radius: 4px;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: var(--accent1-color);
+}

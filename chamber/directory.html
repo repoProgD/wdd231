@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>WDD 231- Web Frontend Development I - Diego Ledesma</title>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diego Ledesma">
+    <meta name="description" content="WDD 231 - Web Frontend Development I W02Activity, by Diego Ledesma.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="WDD 231- Web Frontend Development I - Diego Ledesma">
+    <meta property="og:description" content="WDD 231 - Web Frontend Development I W02Activity, by Diego Ledesma.">
+    <meta property="og:image" content="https://mysite.com/image.jpg">
+    <meta property="og:url" content="https://mysite.com">
+
+    <!-- Normalize has to preced other style files-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Google Fonts (Lora & Roboto)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Roboto:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+
+    <!-- JavaScript files -->
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="site logo" width="1" height="1">
+        <span>Lobos Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="nav-button"><a href="index.html">Home</a></li>
+                <li class="nav-button"><a href="discover.html">Discover</a></li>
+                <li class="nav-button current"><a href="directory.html">Business Directory</a></li>
+                <li class="nav-button"><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Lobos Chamber of Commerce</h1>
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+
+        <article id="cards" class="grid">
+        </article>
+
+
+    </main>
+
+    <footer>
+        <div class="quick-contact">
+            <p>Av. Los olivos 2037</p>
+            <p>Lobos, Buenos Aires</p>
+            <p>info@loboschamber.com</p>
+            <p>(54) 1234-5678</p>
+        </div>
+        <div class="social">
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="Linkedin Profile"
+                    width="16" height="16"></a>
+            <a href="https://github.com" target="_blank"><img src="images/github.svg" alt="Github Repository" width="16"
+                    height="16"></a>
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Page" width="16"
+                    height="16"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram Page"
+                    width="16" height="16"></a>
+        </div>
+        <p> © <span id="currentyear"></span>WDD231 Class Project</p>
+        <p><span id="currentyear"></span>Diego Ledesma </p>
+        <p><span id="currentyear"></span>Lobos Chamber of Commerce</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
