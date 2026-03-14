@@ -108,20 +108,12 @@ header span {
     background-color: var(--accent1-color);
 }
 
-/*.navigation li.current a {
-    color: var(--text-color-dark);
-}*/
 
 .navigation a:hover {
     background-color: var(--accent1-color);
 }
 
 /*Main*/
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 h1 {
     background-color: var(--secondary-color);
@@ -177,15 +169,18 @@ section {
         }
     }
 
-    img {
-        border: 1px solid #fff;
-        box-shadow: 0 0 1rem #555;
-        margin: 0.75rem auto;
-    }
 }
 
 .grid h2{
     font-size: 1.5rem;
+}
+
+.grid img {
+    width: auto;
+    height: 150px;
+    border: 1px solid #fff;
+    box-shadow: 0 0 1rem #555;
+    margin: 0.75rem auto;
 }
 
 .list {
@@ -202,10 +197,6 @@ section {
             margin: 0 1rem;
         }
 
-        img {
-            display: none;
-        }
-
         h3 {
             font-size: 1rem;
         }
@@ -216,10 +207,10 @@ section {
     }
 }
 
-img {
-    width: auto;
-    height: 150px;
+.list img {
+    display: none;
 }
+
 
 
 /*Footer*/

@@ -1,4 +1,4 @@
-const url = '../members.json';
+const url = '../data/members.json';
 
 
 async function getMembersData() {
