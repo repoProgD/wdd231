@@ -30,6 +30,7 @@ header {
     border-bottom: solid 1px var(--overlay-color);
     column-gap: 8px;
     background-color: var(--primary-color);
+    height: 100px;
 
 }
 
@@ -150,13 +151,16 @@ section {
     background-color: var(--accent1-color);
 }
 
-.section a {
-    font-size: 0.85rem;
-}
 
 .section h2 {
     font-size: 1.1rem;
 }
+
+#cards p, #cards a {
+    font-weight: 500;
+    color: var(--text-color-dark);
+}
+
 
 .grid {
     display: grid;
@@ -188,7 +192,7 @@ section {
 .list {
     display: flex;
     flex-direction: column;
-
+    row-gap: 0.25rem;
 }
 
 .list section {
@@ -196,6 +200,8 @@ section {
      grid-template-columns: 1.5fr 1fr 1fr 1fr;
      margin: 0;
      padding: 0.25rem;
+     height:65px;
+     align-items: center;
  }
 
  .list section > * {
