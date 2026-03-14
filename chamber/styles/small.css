@@ -136,24 +136,26 @@ main {
     background-color: var(--secondary-color);
     text-align: center;
 
-    button {
-        padding: 0.5rem 1rem;
-        font-weight: 700;
-    }
+    
+}
+
+.menu button {
+    padding: 0.5rem 1rem;
+    font-weight: 700;
 }
 
 section {
     border: 1px solid  #999999;
     padding: 0.5rem;
     background-color: var(--accent1-color);
+}
 
-    a {
-        font-size: 0.85rem;
-    }
+.section a {
+    font-size: 0.85rem;
+}
 
-    h2 {
-        font-size: 1.1rem;
-    }
+.section h2 {
+    font-size: 1.1rem;
 }
 
 .grid {
@@ -161,14 +163,14 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 5px;
     align-items: center;
+}
 
-    section {
-        text-align: center;
-        & > * {
-            margin: 0.1rem;
-        }
-    }
+.grid section {
+    text-align: center;
+}
 
+.grid section &>* {
+    margin: 0.1rem;
 }
 
 .grid h2{
