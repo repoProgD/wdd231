@@ -169,7 +169,7 @@ section {
     text-align: center;
 }
 
-.grid section &>* {
+.grid section > * {
     margin: 0.1rem;
 }
 
@@ -193,14 +193,12 @@ section {
 
 .list section {
      display: grid;
-     grid-template-columns: 2fr 1fr 1fr;
+     grid-template-columns: 1.5fr 1fr 1fr 1fr;
      margin: 0;
      padding: 0.25rem;
-
-     
  }
 
- .list section  &>* {
+ .list section > * {
      margin: 0 1rem;
  }
 
@@ -208,15 +206,13 @@ section {
      font-size: 1rem;
  }
 
- .list section &:nth-child(even) {
+ .list section:nth-child(even) {
     background-color: var(--soft2-color);
 }
-
 
 .list img {
     display: none;
 }
-
 
 
 /*Footer*/
@@ -225,7 +221,6 @@ footer {
     padding: 1rem 10px; 
     text-align: center;
 }
-
 
 
 footer p {
