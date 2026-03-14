@@ -189,25 +189,29 @@ section {
     display: flex;
     flex-direction: column;
 
-    section {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        margin: 0;
-        padding: 0.25rem;
-
-        & > * {
-            margin: 0 1rem;
-        }
-
-        h3 {
-            font-size: 1rem;
-        }
-
-        &:nth-child(even) {
-            background-color: var(--soft2-color);
-        }
-    }
 }
+
+.list section {
+     display: grid;
+     grid-template-columns: 2fr 1fr 1fr;
+     margin: 0;
+     padding: 0.25rem;
+
+     
+ }
+
+ .list section  &>* {
+     margin: 0 1rem;
+ }
+
+ .list section  h2 {
+     font-size: 1rem;
+ }
+
+ .list section &:nth-child(even) {
+    background-color: var(--soft2-color);
+}
+
 
 .list img {
     display: none;
