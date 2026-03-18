@@ -8,6 +8,11 @@ async function getMembersData() {
 }
 
 const cards = document.querySelector('#cards');
+const mappedMembership = {
+    1: "Gold",
+    2: "Silver",
+    3: "Member"
+}
 
 
 getMembersData();
@@ -22,6 +27,9 @@ const displayMembers = (members) => {
         let address = document.createElement("p");
         let phone = document.createElement("p");
         let website = document.createElement("a");
+        let membership = document.createElement("p");
+        
+        
 
 
 
@@ -37,6 +45,7 @@ const displayMembers = (members) => {
         address.innerHTML = `${member.company_address}`;
         phone.innerHTML = `${member.company_phone}`;
         website.innerHTML = `<a href="${member.company_website}" target="_blank">Visit Website</a>`;
+        membership.innerHTML = `Membership Level: ${mappedMembership[member.membership_level]}`;
 
         // Append the section(card) with the created elements
         card.appendChild(name);
@@ -44,6 +53,7 @@ const displayMembers = (members) => {
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(website);
+        card.appendChild(membership);
 
         cards.appendChild(card);
     }); // end of arrow function and forEach loop
