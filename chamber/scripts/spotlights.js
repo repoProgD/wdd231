@@ -39,7 +39,7 @@ function displaySpotlights(members) {
         image.setAttribute('alt', `Image of ${member.company_name}`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '100');
-        image.setAttribute('height', '75');
+        image.setAttribute('height', '67');
 
         imageContainer.appendChild(image);
 
