@@ -43,10 +43,28 @@
 
     .first-row{
         grid-template-columns: 2fr 1fr 1fr;
+        max-width: 900px;
     }
 
     .second-row{
-        grid-template-columns: 1fr 1fr 1fr;
+        max-width: 900px;
+    }
+
+    #spotlights-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+        gap: 1rem;
+        width: 100%;
+    }
+
+    .business-spotlight{
+        margin:0;
+        height: 100%;
+    }
+
+    .spotlight-image img {
+        max-width: 100%;
+        height: auto;
     }
 
 }

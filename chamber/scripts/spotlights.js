@@ -26,32 +26,41 @@ function displaySpotlights(members) {
 
     members.forEach(member => {
         let card = document.createElement("section");
-        let name = document.createElement("h2");
-        let image = document.createElement("img");
-        let email = document.createElement("p");
-        let phone = document.createElement("p");
-        let website = document.createElement("a");
-
         card.classList.add("business-spotlight");
-
+        
+        let name = document.createElement("h2");
         name.textContent = member.company_name;
-        name.classList.add("section-title");
 
+        let imageContainer = document.createElement("div");
+        imageContainer.classList.add("spotlight-image");
+
+        let image = document.createElement("img");
         image.setAttribute('src', `images/${member.image_file}`);
         image.setAttribute('alt', `Image of ${member.company_name}`);
         image.setAttribute('loading', 'lazy');
         image.setAttribute('width', '100');
         image.setAttribute('height', '75');
 
-        email.innerHTML = `${member.email}`
-        phone.innerHTML = `${member.company_phone}`;
-        website.innerHTML = `<a href="${member.company_website}" target="_blank">Visit Website</a>`;
+        imageContainer.appendChild(image);
 
-        card.appendChild(name);
-        card.appendChild(image);
-        card.appendChild(email);
-        card.appendChild(phone);
-        card.appendChild(website);
+        let info = document.createElement("div");
+        info.classList.add("spotlight-info");
+
+        let email = document.createElement("p");
+        email.innerHTML = `${member.email}`
+
+        let phone = document.createElement("p");
+        phone.innerHTML = `${member.company_phone}`;
+
+        let website = document.createElement("a");
+        website.href = member.company_website;
+        website.target = "_blank";
+        website.textContent = "Visit Website"
+    
+        
+        info.append(email, phone, website);
+        
+        card.append(name, imageContainer, info);
 
         container.appendChild(card);
         

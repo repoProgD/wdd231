@@ -77,22 +77,35 @@
 
             <section class="index-card current-weather">
                 <h2 class="section-title">Current Weather</h2>
-                <p><span id="current-temp"></span></p>
-                <figure>
-                    <img id="weather-icon" src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
+                <div class="weather-composition">
+
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+
+                    <div class="weather-data">
+                        <p><span id="current-temp"></span></p>
+                        <p><span id="weather-description"></span></p>
+                        <p><span id="max-temp"></span></p>
+                        <p><span id="min-temp"></span></p>
+                        <p><span id="humidity"></span></p>
+                        <p><span id="sunrise"></span></p>
+                        <p><span id="sunset"></span></p>
+                    </div>  
+                </div>
             </section>
 
             <section class="index-card weather-forecast">
                 <h2 class="section-title">Weather Forecast</h2>
                 <div id="forecast-widget"></div>
-
             </section>
 
         </div>
 
-        <div class="second-row" id="spotlights-container"></div>
+        <div class="second-row">
+            <div id="spotlights-container"></div>
+        </div>
     </main>
 
     <footer>

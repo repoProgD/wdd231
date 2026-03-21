@@ -2,6 +2,12 @@
 const weatherIcon = document.querySelector('#weather-icon');
 const currentTemp = document.querySelector('#current-temp');
 const captionDesc = document.querySelector('figcaption');
+const description = document.querySelector('#weather-description');
+const maxTemp = document.querySelector('#max-temp');
+const minTemp = document.querySelector('#min-temp');
+const humidity = document.querySelector('#humidity');
+const sunrise = document.querySelector('#sunrise');
+const sunset = document.querySelector('#sunset');
 
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-35.19&lon=-59.10&appid=4872525374a53551d1751869d7d7089d&units=imperial&lang=en';
@@ -37,10 +43,28 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
+    
+
+    currentTemp.innerHTML = `<span class="temperature">${data.main.temp}&deg; F</span>`;
+    description.textContent = `${data.weather[0].description}`;
+    maxTemp.textContent = `High: ${data.main.temp_max}° F`;
+    minTemp.textContent = `Low: ${data.main.temp_min}° F`;
+    humidity.textContent = `Humidity: ${data.main.humidity}%`;
+
+    let sunriseTime = new Date(data.sys.sunrise * 1000);
+    sunrise.textContent = `Sunrise: ${sunriseTime.toLocaleTimeString(
+        "en-US", {hour: "2-digit", minute: "2-digit"}
+    )}`;
+
+    let sunsetTime = new Date(data.sys.sunset * 1000);
+    sunset.textContent = `Sunrise: ${sunsetTime.toLocaleTimeString(
+        "en-US", { hour: "2-digit", minute: "2-digit" }
+    )}`;
+
+    let iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = `${desc}`;
+
+    
 }

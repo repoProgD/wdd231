@@ -72,7 +72,7 @@ function displayData(forecastData) {
 
     forecastData.forEach(day => {
         let p = document.createElement("p");
-        p.textContent = `${day.label}: ${day.max}°F`;
+        p.innerHTML = `${day.label}: <span class="temperature">${day.max}° F</span>`;
 
         container.appendChild(p);
     });
