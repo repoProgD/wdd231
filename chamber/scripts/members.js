@@ -29,8 +29,6 @@ const displayMembers = (members) => {
         let website = document.createElement("a");
         let membership = document.createElement("p");
         
-        
-
 
 
         // Build the h2 

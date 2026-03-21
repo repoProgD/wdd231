@@ -7,7 +7,8 @@
             "company_website": "https://www.elcofreregalos.com",
             "image_file": "gift-shop.webp",
             "membership_level": 1,
-            "type_of_business": "Gift Shop"
+            "type_of_business": "Gift Shop",
+            "email": "elcofre@loboscc.com"
         },
         {
             "company_name": "Restaurante La Esquina",
@@ -16,7 +17,8 @@
             "company_website": "https://www.restaurantelaesquina.com",
             "image_file": "restaurant.webp",
             "membership_level": 2,
-            "type_of_business": "Restaurant"
+            "type_of_business": "Restaurant",
+            "email": "restolaesquina@loboscc.com"
         },
         {
             "company_name": "Panadería Dulce Hogar",
@@ -25,7 +27,8 @@
             "company_website": "https://www.dulcehogarpanaderia.com",
             "image_file": "bakery.webp",
             "membership_level": 3,
-            "type_of_business": "Bakery"
+            "type_of_business": "Bakery",
+            "email": "dhPanaderia@loboscc.com"         
         },
         {
             "company_name": "Moda Urbana",
@@ -34,7 +37,8 @@
             "company_website": "https://www.modaurbana.com",
             "image_file": "clothing-store.webp",
             "membership_level": 1,
-            "type_of_business": "Clothing Store"
+            "type_of_business": "Clothing Store",
+            "email": "modaH@loboscc.com"
         },
         {
             "company_name": "Energía Fitness",
@@ -43,7 +47,8 @@
             "company_website": "https://www.energiafitness.com",
             "image_file": "fitness-center.webp",
             "membership_level": 2,
-            "type_of_business": "Fitness Center"
+            "type_of_business": "Fitness Center",
+            "email": "energyfitness@loboscc.com"
         },
         {
             "company_name": "Buena Madera",
@@ -52,7 +57,8 @@
             "company_website": "https://www.buenamadera.com",
             "image_file": "furniture-store.webp",
             "membership_level": 2,
-            "type_of_business": "Furniture Store"
+            "type_of_business": "Furniture Store",
+            "email": "buena_madera@loboscc.com"
         },
         {
             "company_name": "Farmacia San Gabriel",
@@ -61,7 +67,8 @@
             "company_website": "https://www.farmaciasangabriel.com",
             "image_file": "pharmacy.webp",
             "membership_level": 3,
-            "type_of_business": "Pharmacy"
+            "type_of_business": "Pharmacy",
+            "email": "farmaciaSanGabriel@loboscc.com"
         }
     ]
 }

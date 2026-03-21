@@ -39,6 +39,16 @@
         border: none;
     }
 
+    /* Home Page */
+
+    .first-row{
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    .second-row{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }
 
    

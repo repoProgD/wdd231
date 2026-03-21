@@ -1,7 +1,8 @@
 //export the setSectionSelection function as a named export.
 
-export function setSectionSelection() {
+export function setSectionSelection(sections) {
     const sectionSelect = document.querySelector("#sectionNumber");
+    
     sections.forEach((section) => {
         const option = document.createElement("option");
         option.value = section.sectionNumber;
@@ -9,5 +10,4 @@ export function setSectionSelection() {
         sectionSelect.appendChild(option);
     });
 }
-
 

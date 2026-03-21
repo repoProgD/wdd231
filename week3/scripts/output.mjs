@@ -11,3 +11,6 @@ export function renderSections(sections) {
     <td>${section.enrolled}</td>
     <td>${section.instructor}</td></tr>`
     );
+
+    document.querySelector("#sections").innerHTML = html.join("");
+}
