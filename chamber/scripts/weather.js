@@ -43,7 +43,7 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    const desc = data.weather[0].description;
+    let desc = data.weather[0].description;
 
     currentTemp.innerHTML = `<span class="temperature">${data.main.temp}&deg; F</span>`;
     description.textContent = `${data.weather[0].description}`;
@@ -61,10 +61,21 @@ function displayResults(data) {
         "en-US", { hour: "2-digit", minute: "2-digit" }
     )}`;
 
-    let iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = `${desc}`;
+    let weatherFigure = document.querySelector('.weather-composition figure') // div container (parent) -> figure (child)
+    weatherFigure.innerHTML = '';
 
+    let newWeatherIcon = document.createElement('img');
+    let iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     
+    
+    newWeatherIcon.setAttribute('src', iconsrc);
+    newWeatherIcon.setAttribute('alt', desc);
+    newWeatherIcon.setAttribute('id', 'weather-icon');
+
+    let newCaption = document.createElement('figcaption');
+    newCaption.textContet = desc;
+    
+    weatherFigure.appendChild(newWeatherIcon);
+    weatherFigure.appendChild(newCaption);
+
 }
