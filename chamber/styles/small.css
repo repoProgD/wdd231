@@ -297,7 +297,7 @@ footer span {
 
 .cta-button {
     background: #ffffff;
-    color: #000;
+    color: #000000;
     padding: 0.75rem 1.5rem;
     text-decoration: none;
     font-weight: bold;
@@ -376,9 +376,17 @@ footer span {
     border-bottom: solid 1px var(--text-color-dark);
 }
 
-.business-spotlight p {
+.spotlight-info p {
+    font-size: 0.7rem;
     margin-bottom: 0.5rem;
 }
+
+.spotlight-info a {
+    font-size: 0.9rem;
+    color: #000000
+}
+
+
 
 
 

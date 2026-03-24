@@ -11,14 +11,14 @@
             "email": "elcofre@loboscc.com"
         },
         {
-            "company_name": "Restaurante La Esquina",
+            "company_name": "Resto La Esquina",
             "company_address": "Sarmiento 455",
             "company_phone": "11 4689 3314",
             "company_website": "https://www.restaurantelaesquina.com",
             "image_file": "restaurant.webp",
             "membership_level": 2,
             "type_of_business": "Restaurant",
-            "email": "restolaesquina@loboscc.com"
+            "email": "restoesquina@loboscc.com"
         },
         {
             "company_name": "Panadería Dulce Hogar",
@@ -58,7 +58,7 @@
             "image_file": "furniture-store.webp",
             "membership_level": 2,
             "type_of_business": "Furniture Store",
-            "email": "buena_madera@loboscc.com"
+            "email": "buenamadera@loboscc.com"
         },
         {
             "company_name": "Farmacia San Gabriel",

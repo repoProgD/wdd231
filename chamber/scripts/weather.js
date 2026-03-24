@@ -57,7 +57,7 @@ function displayResults(data) {
     )}`;
 
     let sunsetTime = new Date(data.sys.sunset * 1000);
-    sunset.textContent = `Sunrise: ${sunsetTime.toLocaleTimeString(
+    sunset.textContent = `Sunset: ${sunsetTime.toLocaleTimeString(
         "en-US", { hour: "2-digit", minute: "2-digit" }
     )}`;
 
