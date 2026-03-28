@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+    <title>Join - Lobos Chamber of Commerce</title>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diego Ledesma">
+    <meta name="description" content="WDD 231 - Web Frontend Development I W03Activity, by Diego Ledesma.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Local Business Join page - Lobos Chamber of Commerce">
+    <meta property="og:description"
+        content="Explore businesses, services, and opportunities in Lobos, Buenos Aires. The Lobos Chamber of Commerce connects local companies and supports community growth.">
+    <meta property="og:image" content="https://repoprogd.github.io/wdd231/chamber/my-site.jpg">
+    <meta property="og:url" content="https://repoprogd.github.io/wdd231/chamber/directory.html">
+
+    <!-- Normalize has to preced other style files-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- Google Fonts (Lora & Roboto)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Roboto:wght@100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico">
+
+    <!-- JavaScript files -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js" defer></script>
+    <script src="scripts/modals.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="site logo" width="1" height="1">
+        <span>Lobos Chamber of Commerce</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="nav-button"><a href="index.html">Home</a></li>
+                <li class="nav-button"><a href="discover.html">Discover</a></li>
+                <li class="nav-button"><a href="directory.html">Business Directory</a></li>
+                <li class="nav-button current"><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="join-main">
+        <h1>Join</h1>
+        <form method="GET" action="thanks.html" class="designOne">
+            <label>First Name <input type="text" name="first" required autocomplete="given-name"
+                    title="Your First Name"></label>
+            <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+            <label>Title<input type="text" name="title" required placeholder="organization-title" title="Your Organization Title"
+                    autocomplete="organization-title"></label>
+            <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
+                    autocomplete="email"></label>
+            <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+                    placeholder="987-555-1234"></label>
+            <label>Organization Name <input type="text" name="organization-name" required autocomplete="organization-name"
+                 title="Your Organization Name" autocomplete="organization"></label>
+            
+            
+            
+        
+            <p>Membership Level</p>
+            <label><input type="radio" name="membership-level" value="non-profit" checked> np</label>
+            <label><input type="radio" name="membership-level" value="bronze"> bronze</label>
+            <label><input type="radio" name="membership-level" value="silver"> silver</label>
+            <label><input type="radio" name="membership-level" value="gold"> gold</label>
+            
+            
+            <p class="description-title">Description</p>
+            <label>Organization Description (optional)
+                <textarea 
+                name="organization-description"
+                title="Describe your organization">
+            </textarea>
+        </label>
+        
+        <input type="hidden" id="timestamp" name="timestamp">
+        
+            <input type="submit" value="Become a member">
+        </form>
+
+        <div class="levels-container">
+            <h2>Membership Levels</h2>
+
+            <!--Non Profit Card -->
+            <section class="card card-membership">
+                <h3 class="section-title">Non Profit Membership</h3>
+                <p>Benefits</p>
+                <button data-dialog="npDialog">See Benefits</button>
+            </section>
+            
+            <dialog id="npDialog">
+                <h3>Non Profit Membership Benefits</h3>
+            
+                <ul>
+                    <li>Free listing for non-profits</li>
+                    <li>Free training sessions</li>
+                    <li>Community access</li>
+                    <li>Free entry</li>
+                </ul>
+            
+                <button class="close">Close</button>
+            
+            </dialog>
+            
+
+            <!--Bronze Card -->
+            <section class="card card-membership">
+                <h3 class="section-title">Bronze Membership</h3>
+                <p>Exclusive Benefits</p>
+                <button data-dialog="bronzeDialog">See Benefits</button>
+            </section>
+            
+            <dialog id="bronzeDialog">
+                <h3>Bronze Membership Benefits</h3>
+            
+                <ul>
+                    <li>Basic Listing</li>
+                    <li>Limited training resources</li>
+                    <li>Community access</li>
+                    <li>Pay per event access</li>
+                </ul>
+            
+                <button class="close">Close</button>
+            
+            </dialog>
+
+            <!--Silver Card -->
+            <section class="card card-membership">
+                <h3 class="section-title">Silver Membership</h3>
+                <p>Exclusive Benefits</p>
+                <button data-dialog="silverDialog">See Benefits</button>
+            </section>
+            
+            <dialog id="silverDialog">
+                <h3>Silver Membership Benefits</h3>
+            
+                <ul>
+                    <li>Featured placement on homepage</li>
+                    <li>Access to selected workshops</li>
+                    <li>Premium networking events</li>
+                    <li>Discounted event access</li>
+                </ul>
+            
+                <button class="close">Close</button>
+            
+            </dialog>
+
+            
+
+            <!--Gold Card -->
+            <section class="card card-membership">
+                <h3 class="section-title">Gold Membership</h3>
+                <p>Exclusive Benefits</p>
+                <button data-dialog="goldDialog">See Benefits</button>
+            </section>
+            
+            <dialog id="goldDialog">
+                <h3>Gold Membership Benefits</h3>
+            
+                <ul>
+                    <li>Featured placement on homepage</li>
+                    <li>Access to all premium workshops</li>
+                    <li>VIP networking events</li>
+                    <li>Free access to all events</li>
+                </ul>
+            
+                <button class="close">Close</button>
+            
+            </dialog>
+
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <div class="quick-contact">
+            <p>Av. Los olivos 2037</p>
+            <p>Lobos, Buenos Aires</p>
+            <p>info@loboschamber.com</p>
+            <p>(54) 1234-5678</p>
+        </div>
+        <div class="social">
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="Linkedin Profile"
+                    width="16" height="16"></a>
+            <a href="https://github.com" target="_blank"><img src="images/github.svg" alt="Github Repository" width="16"
+                    height="16"></a>
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Page" width="16"
+                    height="16"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram Page"
+                    width="16" height="16"></a>
+        </div>
+        <p> © <span id="currentyear"></span>WDD231 Class Project</p>
+        <p><span></span>Diego Ledesma </p>
+        <p><span></span>Lobos Chamber of Commerce</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

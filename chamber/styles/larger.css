@@ -67,6 +67,30 @@
         height: auto;
     }
 
+    /* Join Page */
+
+    .join-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .join-main h1{
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+
+    .card-membership button {
+        width: 32%;
+        max-width: 125px;
+        margin: 0 auto 0.5rem auto;
+    }
+
 }
 
    

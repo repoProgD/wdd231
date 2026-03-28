@@ -118,10 +118,15 @@ header span {
 /*Main*/
 
 h1 {
+    font-family: var(--heading-font);
     background-color: var(--secondary-color);
     color: var(--text-color-light);
     padding: 1rem;
     text-align: center;
+}
+
+h2, h3 {
+    font-family: var(--heading-font);
 }
 
 main {
@@ -154,6 +159,7 @@ section {
 
 .section h2 {
     font-size: 1.1rem;
+    font-family: var(--heading-font);
     
 }
 
@@ -385,6 +391,162 @@ footer span {
     font-size: 0.9rem;
     color: #000000
 }
+
+/*Join Page*/
+
+
+form {
+    margin: 1rem 2%;
+    
+
+    label {
+        display: block;
+        font-size: .8rem;
+        color: green;
+        padding-top: .2rem;
+    }
+
+    h3 {
+        font-size: .9rem;
+        color: #E07A5F;
+        margin: 1.5rem 0 .2rem 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    input[type=text],
+    input[type=tel],
+    input[type=date],
+    input[type=email],
+    select {
+        display: block;
+        margin: .1rem 0 1rem 0;
+        padding: .3rem;
+        border: 1px solid #999;
+        border-radius: 4px;
+        border-left-width: 5px;
+        border-left-color: #555;
+        font-size: 1rem;
+        color: #3D405B;
+        width: 250px;
+    }
+
+    .description-title{
+        margin-top: 1rem;
+    }
+
+    input:required {
+        border-left-color: #d70000;
+    }
+
+    input:focus {
+        border-left-color: black;
+        outline: none;
+    }
+
+    input:required:valid {
+        border-left-color: green;
+    }
+
+    textarea {
+        display: block;
+        width: 100%;
+        max-width: 500px;
+        min-height: 120px;
+
+        margin: .1rem 0 1rem 0;
+        padding: .3rem;
+        border: 1px solid #999;
+        border-radius: 4px;
+        font-size: 1rem;
+        color: #3D405B;
+        width: 250px;
+    }
+
+    input[type=submit] {
+        border: none;
+        text-align: center;
+        background-color: var(--secondary-color);
+        color: white;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 2rem 0;
+        font-size: 1.2rem;
+        -webkit-appearance: none;
+        appearance: none;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #3D405B;
+}
+
+#results {
+    background-color: #F4F1DE;
+    padding: 0 1rem;
+    border: 1px solid #E07A5F;
+    border-radius: 6px;
+}
+
+dialog {
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding: 20px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+.levels-container h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.card-membership {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 0.5rem;
+    margin: 0 1rem 0.5rem 1rem;
+}
+
+.card-membership h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 1px var(--text-color-dark);
+}
+
+.card-membership p {
+    font-weight: 500;
+}
+
+.card-membership button{
+    width: 25%;
+    max-width: 125px;
+    margin:0 auto 0.5rem auto;
+}
+
+dialog {
+    width: 400px;
+    height: 300px;
+    background-color: rgb(191, 228, 176);
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding: 30px;
+    margin-left: 20px;
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+
 
 
 
