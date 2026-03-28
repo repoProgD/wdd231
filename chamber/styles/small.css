@@ -394,18 +394,15 @@ footer span {
 
 /*Join Page*/
 
-
 form {
-    margin: 1rem 2%;
-    
+   
 
     label {
         display: block;
         font-size: .8rem;
-        color: green;
+        color: var(--text-color-dark);
         padding-top: .2rem;
     }
-
 
     input[type=text],
     input[type=tel],
@@ -415,12 +412,11 @@ form {
         display: block;
         margin: .1rem 0 1rem 0;
         padding: .3rem;
-        border: 1px solid #999;
+        border: 1px solid var(--soft2-color);
         border-radius: 4px;
         border-left-width: 5px;
-        border-left-color: #555;
         font-size: 1rem;
-        color: #3D405B;
+        color: var(--text-color-dark);
         width: 250px;
     }
 
@@ -433,33 +429,33 @@ form {
     }
 
     input:focus {
-        border-left-color: black;
+        border-left-color: #000000;
         outline: none;
     }
 
     input:required:valid {
-        border-left-color: green;
+        border-left-color: #008000;
     }
 
     textarea {
         display: block;
-        width: 100%;
+        width: 250px;
         max-width: 500px;
         min-height: 120px;
         margin: .1rem 0 1rem 0;
         padding: .3rem;
-        border: 1px solid #999;
+        border: 1px solid var(--soft2-color);
         border-radius: 4px;
         font-size: 1rem;
-        color: #3D405B;
-        width: 250px;
+        color: var();
+        
     }
 
     input[type=submit] {
         border: none;
         text-align: center;
         background-color: var(--secondary-color);
-        color: white;
+        color: #ffffff;
         border-radius: 1rem;
         padding: .75rem 1.5rem;
         margin: 2rem 0;
@@ -474,24 +470,10 @@ input:-webkit-autofill {
 }
 
 #results {
-    background-color: #F4F1DE;
+    background-color: var(--soft2-color);
     padding: 0 1rem;
-    border: 1px solid #E07A5F;
+    border: 1px solid var(--primary-color);
     border-radius: 6px;
-}
-
-dialog {
-    width: 400px;
-    height: 300px;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-    padding: 20px;
-}
-
-::backdrop {
-    background-color: rgb(0 0 0 / 50%);
 }
 
 .levels-container h2 {
@@ -538,16 +520,22 @@ dialog {
     margin:0 auto 0.5rem auto;
 }
 
-/*Thankyou*/
-
-#results {
-    background-color: var(--soft2-color);
-    border-color: #23053E;
-    text-align: center;
-    margin: 5rem 2rem;
-    padding: 2rem 0
+dialog {
+    width: 400px;
+    height: 300px;
+    background-color: var(--accent1-color);
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+    padding: 20px;
 }
 
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+/*Thankyou*/
+/* Already done under #results*/
 
 
 
