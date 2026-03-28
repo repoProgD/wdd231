@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Diego Ledesma">
-    <meta name="description" content="WDD 231 - Web Frontend Development I W03Activity, by Diego Ledesma.">
+    <meta name="description" content="WDD 231 - Web Frontend Development I W04Activity, by Diego Ledesma.">
 
     <!-- Facebook Meta Tags -->
     <meta property="og:title" content="Local Business Join page - Lobos Chamber of Commerce">
@@ -57,29 +57,32 @@
     </header>
     <main class="join-main">
         <h1>Join</h1>
-        <form method="GET" action="thanks.html" class="designOne">
+        
+        <form method="GET" action="thankyou.html" class="designOne">
             <label>First Name <input type="text" name="first" required autocomplete="given-name"
                     title="Your First Name"></label>
+
             <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+            
             <label>Title<input type="text" name="title" required placeholder="organization-title" title="Your Organization Title"
                     autocomplete="organization-title"></label>
+
             <label>Email <input type="email" name="email" required placeholder="john89@gmail.com" title="Your Email"
                     autocomplete="email"></label>
-            <label>Cell Phone <input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
+
+            <label>Cell Phone<input type="tel" name="phone" autocomplete="tel" title="A Phone Number with dashes"
                     placeholder="987-555-1234"></label>
-            <label>Organization Name <input type="text" name="organization-name" required autocomplete="organization-name"
-                 title="Your Organization Name" autocomplete="organization"></label>
-            
-            
-            
+
+            <label>Organization Name <input type="text" name="organization-name" required title="organization-name"
+                autocomplete="organization"></label> 
+
         
             <p>Membership Level</p>
             <label><input type="radio" name="membership-level" value="non-profit" checked> np</label>
             <label><input type="radio" name="membership-level" value="bronze"> bronze</label>
             <label><input type="radio" name="membership-level" value="silver"> silver</label>
             <label><input type="radio" name="membership-level" value="gold"> gold</label>
-            
-            
+             
             <p class="description-title">Description</p>
             <label>Organization Description (optional)
                 <textarea 
@@ -113,8 +116,7 @@
                     <li>Free entry</li>
                 </ul>
             
-                <button class="close">Close</button>
-            
+                <button class="close">Close</button>     
             </dialog>
             
 
@@ -159,8 +161,7 @@
                 <button class="close">Close</button>
             
             </dialog>
-
-            
+  
 
             <!--Gold Card -->
             <section class="card card-membership">

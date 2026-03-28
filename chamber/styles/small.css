@@ -406,12 +406,6 @@ form {
         padding-top: .2rem;
     }
 
-    h3 {
-        font-size: .9rem;
-        color: #E07A5F;
-        margin: 1.5rem 0 .2rem 0;
-        border-bottom: 1px solid #eee;
-    }
 
     input[type=text],
     input[type=tel],
@@ -452,7 +446,6 @@ form {
         width: 100%;
         max-width: 500px;
         min-height: 120px;
-
         margin: .1rem 0 1rem 0;
         padding: .3rem;
         border: 1px solid #999;
@@ -506,12 +499,26 @@ dialog {
     margin-bottom: 1rem;
 }
 
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0; 
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .card-membership {
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
     gap: 0.5rem;
     margin: 0 1rem 0.5rem 1rem;
+    opacity: 0;
+    animation: fadeSlideUp 1.5s ease forwards;
 }
 
 .card-membership h2 {
@@ -531,19 +538,14 @@ dialog {
     margin:0 auto 0.5rem auto;
 }
 
-dialog {
-    width: 400px;
-    height: 300px;
-    background-color: rgb(191, 228, 176);
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgb(0 0 0 / 50%);
-    padding: 30px;
-    margin-left: 20px;
-}
+/*Thankyou*/
 
-::backdrop {
-    background-color: rgb(0 0 0 / 50%);
+#results {
+    background-color: var(--soft2-color);
+    border-color: #23053E;
+    text-align: center;
+    margin: 5rem 2rem;
+    padding: 2rem 0
 }
 
 
