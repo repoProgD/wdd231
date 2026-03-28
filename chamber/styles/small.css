@@ -394,21 +394,19 @@ footer span {
 
 /*Join Page*/
 
-form {
+form label {
    
-
-    label {
         display: block;
         font-size: .8rem;
         color: var(--text-color-dark);
         padding-top: .2rem;
     }
 
-    input[type=text],
-    input[type=tel],
-    input[type=date],
-    input[type=email],
-    select {
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form select {
         display: block;
         margin: .1rem 0 1rem 0;
         padding: .3rem;
@@ -420,24 +418,24 @@ form {
         width: 250px;
     }
 
-    .description-title{
+form .description-title{
         margin-top: 1rem;
     }
 
-    input:required {
+form input:required {
         border-left-color: #d70000;
     }
 
-    input:focus {
+form input:focus {
         border-left-color: #000000;
         outline: none;
     }
 
-    input:required:valid {
+form input:required:valid {
         border-left-color: #008000;
     }
 
-    textarea {
+form textarea {
         display: block;
         width: 250px;
         max-width: 500px;
@@ -447,11 +445,10 @@ form {
         border: 1px solid var(--soft2-color);
         border-radius: 4px;
         font-size: 1rem;
-        color: var();
         
     }
 
-    input[type=submit] {
+form input[type=submit] {
         border: none;
         text-align: center;
         background-color: var(--secondary-color);
@@ -463,7 +460,7 @@ form {
         -webkit-appearance: none;
         appearance: none;
     }
-}
+
 
 input:-webkit-autofill {
     -webkit-text-fill-color: #3D405B;
