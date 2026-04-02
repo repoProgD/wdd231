@@ -1,11 +1,14 @@
 /* General rules*/
 :root {
-    --primary-color: #23053E;
-    --secondary-color: #3D2B56;
-    --overlay-color: #EDEDED;
-    --accent1-color: #C5F5B2;
+    --primary-color: #6CACE4;
+    --secondary-color: #E7EEFB;
+    --overlay-color: #1512F5;
+    --accent1-color: #FF8E18;
+    --accent2-color: #E1D600;
     --text-color-light: #FEFEFE;
     --text-color-dark: #000000;
+    --text-color-light: #FEFEFE;
+    --text-dark2-color: #020640;
     --heading-font: "Lora", serif;
     --body-font: "Roboto", sans-serif;
 }
@@ -24,7 +27,7 @@ header {
     display: grid;
     grid-gap: 1rem;
     padding: 20px;
-    color: var(--text-color-light)
+    color: var(--text-color-dark)
 }
 
 
@@ -32,7 +35,7 @@ main {
     background-color: var(--secondary-color);
     max-width: 1080px;
     margin: 0 auto;
-    color: var(--text-color-light);
+    color: var(--text-color-dark);
     padding-bottom: 2rem;
     min-height: 80vh;
 
@@ -101,21 +104,21 @@ nav a:hover {
     color: #000000;
 }
 
-#menu {
+.hamburger {
     font-size: 1.5rem;
     border: 0;
     background: none;
-    color: #ffffff;
+    color: var(--text-color-dark);
     position: absolute;
     top: 1rem;
     right: 1rem;
 }
 
-#menu::before {
+.hamburger::before {
     content: "☰";
 }
 
-#menu.open::before {
+.hamburger.open::before {
     content: "❌";
 }
 
@@ -134,7 +137,7 @@ nav a:hover {
 
 footer {
     background-color: var(--primary-color);
-    color: var(--text-color-light);
+    color: var(--text-color-dark);
     padding: 1.5rem 0;
 }
 
@@ -145,7 +148,7 @@ footer p {
 
 footer span {
     font-weight: bold;
-    color: var(--accent1-color);
+    color: var(--text-dark2-color);
 }
 
 .centered-section{
