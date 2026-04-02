@@ -1,0 +1,164 @@
+/* General rules*/
+:root {
+    --primary-color: #23053E;
+    --secondary-color: #3D2B56;
+    --overlay-color: #EDEDED;
+    --accent1-color: #C5F5B2;
+    --text-color-light: #FEFEFE;
+    --text-color-dark: #000000;
+    --heading-font: "Lora", serif;
+    --body-font: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+header {
+
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    color: var(--text-color-light)
+}
+
+
+main {
+    background-color: var(--secondary-color);
+    max-width: 1080px;
+    margin: 0 auto;
+    color: var(--text-color-light);
+    padding-bottom: 2rem;
+    min-height: 80vh;
+
+}
+
+
+main section {
+    padding: 1rem;
+}
+
+.main-title{
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.5rem;
+    width: 50%;
+    height: 3px;
+    background-color: var(--accent1-color);
+    margin-top: 5px;
+}
+
+
+h1, h2 {
+    font-family: var(--heading-font);
+    padding-top: 1.5rem;
+    padding-bottom: 0.25rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: var(--heading-font);
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: #eeeeee;
+    color: #000000;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #ffffff;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation a {
+    display: none;
+}
+
+.navigation.show a {
+    display: block;
+}
+
+.open a {
+    display: block;
+}
+
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color-light);
+    padding: 1.5rem 0;
+}
+
+footer p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+}
+
+footer span {
+    font-weight: bold;
+    color: var(--accent1-color);
+}
+
+.centered-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+
+.color-list li {
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    margin-top: 0.5rem;
+}
