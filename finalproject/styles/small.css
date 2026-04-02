@@ -70,7 +70,7 @@ main section {
 h1, h2 {
     font-family: var(--heading-font);
     padding-top: 1.5rem;
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.5rem;
     text-align: center;
 }
 
@@ -81,57 +81,6 @@ h3 {
 
 p {
     text-align: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-}
-
-nav a {
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-    font-size: larger;
-}
-
-nav a:hover {
-    text-decoration: underline double;
-    background-color: #eeeeee;
-    color: #000000;
-}
-
-.hamburger {
-    font-size: 1.5rem;
-    border: 0;
-    background: none;
-    color: var(--text-color-dark);
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-
-.hamburger::before {
-    content: "☰";
-}
-
-.hamburger.open::before {
-    content: "❌";
-}
-
-.navigation a {
-    display: none;
-}
-
-.navigation.show a {
-    display: block;
-}
-
-.open a {
-    display: block;
 }
 
 
