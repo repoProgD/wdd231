@@ -520,8 +520,54 @@ dialog {
     background-color: rgb(0 0 0 / 50%);
 }
 
-/*Thankyou*/
-/* Already done under #results*/
+/* Thankyou */
+/* Already done under #results */
+
+/* Discover */
+
+.place-card {
+    margin: 1rem 8px;
+    border:1px solid var(--primary-color);
+    border-radius: 6px;
+    overflow: hidden;
+    
+    display: grid;
+    grid-template-areas: 
+    "name"
+    "photograph"
+    "description"
+    "location";
+}
+
+.place-name {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+.place-image {
+    width: 100%;
+    grid-area: photograph;
+}
+
+.place-description {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+.place-address {
+    margin: 1rem 10px;
+    grid-area: location;
+}
+
+.visit-message {
+    margin: 1rem 10px;
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-color-dark);
+}
 
 
 

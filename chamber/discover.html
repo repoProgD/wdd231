@@ -2,16 +2,16 @@
 <html lang="en-US">
 
 <head>
-    <title>Home - Lobos Chamber of Commerce</title>
+    <title>Discover - Lobos Chamber of Commerce</title>
 
     <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Diego Ledesma">
-    <meta name="description" content="WDD 231 - Web Frontend Development I W03Activity, by Diego Ledesma.">
+    <meta name="description" content="WDD 231 - Web Frontend Development I W05Activity, by Diego Ledesma.">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Local Business Home page - Lobos Chamber of Commerce">
+    <meta property="og:title" content="Local Business Discover page - Lobos Chamber of Commerce">
     <meta property="og:description"
         content="Explore businesses, services, and opportunities in Lobos, Buenos Aires. The Lobos Chamber of Commerce connects local companies and supports community growth.">
     <meta property="og:image" content="https://repoprogd.github.io/wdd231/chamber/my-site.jpg">
@@ -35,9 +35,8 @@
     <!-- JavaScript files -->
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/forecast.js" defer></script>
-    <script src="scripts/spotlights.js" defer></script>
+    <script src="scripts/visit-message.js" defer></script>
+    <script src="scripts/places.js" type="module"></script>
 
 
 </head>
@@ -50,63 +49,18 @@
 
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="nav-button current"><a href="index.html">Home</a></li>
-                <li class="nav-button"><a href="discover.html">Discover</a></li>
+                <li class="nav-button"><a href="index.html">Home</a></li>
+                <li class="nav-button current"><a href="discover.html">Discover</a></li>
                 <li class="nav-button"><a href="directory.html">Business Directory</a></li>
                 <li class="nav-button"><a href="join.html">Join</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Lobos Chamber of Commerce</h1>
-        <div class="hero">
-            <img src="images/plaza-lobos-480.webp" srcset="images/plaza-lobos-480.webp 480w,
-                        images/plaza-lobos-768.webp 768w,
-                        images/plaza-lobos-1000.webp 1000w
-                " sizes="100vw" alt="Heroe image of the main square of Lobos, Buenos Aires">
-
-            <div class="hero-content">
-                <a href="join.html" class="cta-button">Join Us</a>
-            </div>
-        </div>
-
-        <div class="first-row">
-
-            <section class="card events">
-                <h2 class="section-title">Events</h2>
-            </section>
-
-            <section class="card current-weather">
-                <h2 class="section-title">Current Weather</h2>
-                <div class="weather-composition">
-
-                    <figure>
-                        <div id="weather-icon-container"></div>
-                        <figcaption></figcaption>
-                    </figure>
-
-                    <div class="weather-data">
-                        <p><span id="current-temp"></span></p>
-                        <p><span id="weather-description"></span></p>
-                        <p><span id="max-temp"></span></p>
-                        <p><span id="min-temp"></span></p>
-                        <p><span id="humidity"></span></p>
-                        <p><span id="sunrise"></span></p>
-                        <p><span id="sunset"></span></p>
-                    </div>  
-                </div>
-            </section>
-
-            <section class="card weather-forecast">
-                <h2 class="section-title">Weather Forecast</h2>
-                <div id="forecast-widget"></div>
-            </section>
-
-        </div>
-
-        <div class="second-row">
-            <div id="spotlights-container"></div>
-        </div>
+        <h1>Discover</h1>
+        <div class="visit-message" id="visit-message"></div>
+        <article id="discover-cards" class="grid-area"></article>
+        
     </main>
 
     <footer>
