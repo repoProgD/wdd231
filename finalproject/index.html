@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Home - Visit AR</title>
+
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Diego Ledesma">
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Final Project, by Diego Ledesma.">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Local Business Home page - Visit Ar">
+    <meta property="og:url" content="https://repoprogd.github.io/wdd231/finalproject/index.html">
+
+    <!-- Normalize has to preced other style files-->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Google Fonts (Lora & Roboto)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400..700&family=Roboto:wght@400..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <!--<link rel="icon" href="favicon.ico">-->
+
+    <!-- JavaScript files -->
+    <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <!-- <script src="scripts/destinations.js" type="module"></script> -->
+    <script src="scripts/home-cards.js" type="module"></script>
+
+
+</head>
+<body>
+
+    <header>
+        <img src="images/logo.svg" alt="site logo" width="1" height="1">
+        <span>Visit AR</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="nav-button current"><a href="index.html">Home</a></li>
+                <li class="nav-button"><a href="destinations.html">Destinations</a></li>
+                <li class="nav-button"><a href="compare.html">Compare</a></li>
+                <li class="nav-button"><a href="feedback.html">Feedback</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="index-main">
+        <h1 class="main-title" id="main-title">Home</h1>
+        <section class="main-section" id="description">
+            <h2>About this site</h2>
+            <p>Welcome to Visit AR, a project that explores Argentina through its most remarkable destinations, helping you discover
+                and compare places across the country.</p>
+        </section>
+        
+        <section class="main-section purpose" id="purpose">
+            <div class ="text-container">
+                <h2 class="section-title">Purpose</h2>
+                <p>Our goal is to provide clear and visual tools that support the exploration of Argentina’s destinations, making it
+                    easier to compare locations and understand their key characteristics.</p>
+            </div>
+            <figure class="figure-purpose" id="figure-purpose">
+                <img src="images/argentina-flag-300.webp"
+                    srcset="
+                    images/argentina-flag-300.webp 300w,
+                    images/argentina-flag-600.webp 600w,
+                    images/argentina-flag-900.webp 900w   
+                    "
+                    sizes="(min-width: 320px) 300px, 100vw"
+                    alt="Flag of Argentina"
+                    loading="lazy"
+                    decoding="async"
+                >
+            </figure>
+        </section>
+
+        <section class="card-section" id="featured-section">
+            <h2 class="section-title">Featured Destinations</h2>
+            <div class="cards-container" id="featured-container"></div>
+        </section>
+
+        <div class="social">
+            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="Linkedin Profile" width="16"
+                    height="16"></a>
+            <a href="https://github.com" target="_blank"><img src="images/github.svg" alt="Github Repository" width="16"
+                    height="16"></a>
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Page" width="16"
+                    height="16"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram Page" width="16"
+                    height="16"></a>
+        </div>
+    </main>
+
+
+    <footer>
+        <div class="quick-contact">
+            <p>Av. Los eucaliptos 1237</p>
+            <p>CABA</p>
+            <p>info@visitar.com</p>
+            <p>(54) 1234-5678</p>
+        </div>
+
+        <div>
+            <p> © <span id="currentyear"></span>WDD231 Final Project</p>
+            <p><span></span>Diego Ledesma </p>
+            <p><span id="lastModified"></span></p>
+        </div>
+        <div>   
+            <a href="siteplan.html" style="color: var(--text-dark2-color); text-decoration: underline;">
+                Website Plan
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
