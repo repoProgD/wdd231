@@ -65,14 +65,10 @@
 
     .purpose{
         grid-template-columns: 1fr 1fr;
-        column-gap: 2rem;
         align-items: center;
     }
 
-
-    .figure-purpose{
-        justify-content: center;
-    }
+    
 
 
     /*featured destination cards*/

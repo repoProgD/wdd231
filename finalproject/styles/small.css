@@ -229,21 +229,25 @@ footer span {
 .purpose {
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 2rem;
-    text-align: center;
+    gap: 1rem;
 }
 
 .text-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: 600px;
+    width: 100%;
+}
+
+.figure-purpose {
     margin: 0 auto;
 }
 
-.figure-purpose{
-    display: flex;
-    justify-content: center;
+.figure-purpose img{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
 }
 
 /* Destination cards (Home & Destinations) */
