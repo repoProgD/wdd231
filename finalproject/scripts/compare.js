@@ -4,7 +4,7 @@ import { getDestinations } from "./fetch.js";
 const header = document.querySelector("#compare-header");
 const body = document.querySelector("#compare-body");
 const selected = JSON.parse(localStorage.getItem("compare")) || [];
-const properties = ["location", "type", "climate", "activities"];
+const properties = ["location", "type", "climate", "activities", "shortDescription"];
 
 const displayCompare = (destinations) => {
     

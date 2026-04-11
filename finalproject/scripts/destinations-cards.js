@@ -34,11 +34,15 @@ const renderSelectedSummary = (selectedIds) => {
     }
 
     selectedList.innerHTML = `
-        <div class="selection-bar">
+        <div class="additional-div">
             <p>Destinations selected: <strong>${selectedIds.length} / 3</strong></p>
-            <button id="clear-all" class="clear-button">Clear All</button>
-        </div>
+        
 
+            <div class="selected-actions">
+                <a href="compare.html" class="compare-button blue-button">Compare Now</a>
+                <button id="clear-all" class="clear-button blue-button">Clear All</button>
+            </div>
+        </div>
     `;
 
     document.querySelector("#clear-all").addEventListener("click", () => {
