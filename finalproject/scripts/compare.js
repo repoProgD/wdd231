@@ -4,10 +4,10 @@ import { getDestinations } from "./fetch.js";
 const header = document.querySelector("#compare-header");
 const body = document.querySelector("#compare-body");
 const selected = JSON.parse(localStorage.getItem("compare")) || [];
-const properties = ["location", "type", "climate", "activities", "shortDescription"];
+const properties = ["location", "type", "climate", "activities", "description"];
 
 const displayCompare = (destinations) => {
-    
+
 
     let filtered = destinations.filter(dest =>
         selected.includes(dest.id)

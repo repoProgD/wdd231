@@ -35,7 +35,7 @@ const renderSelectedSummary = (selectedIds) => {
 
     selectedList.innerHTML = `
         <div class="additional-div">
-            <p>Destinations selected: <strong>${selectedIds.length} / 3</strong></p>
+            <p><strong>Destinations selected: ${selectedIds.length} / 2</strong></p>
         
 
             <div class="selected-actions">
@@ -68,8 +68,8 @@ const displayDestinations = (featuredDestinations) => {
             }
 
             else {
-                if (selected.length >= 3) {
-                    alert("You can only compare up to 3 destinations");
+                if (selected.length >= 2) {
+                    alert("You can only compare up to 2 destinations");
                     return;
                 }
                 selected.push(destination.id);

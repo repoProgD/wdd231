@@ -50,7 +50,7 @@
 
     footer{
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: left;
         align-items: flex-start;
         
     }
@@ -99,6 +99,10 @@
     }
 
     /* Form Page */
+
+    form {
+        margin-left: -20px;
+    }
   
     .join-main {
         display: grid;

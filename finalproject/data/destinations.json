@@ -6,8 +6,7 @@
         "imageUrl": "images/iguazu.webp",
         "type": "Nature",
         "climate": "Tropical",
-        "shortDescription": "Massive waterfalls surrounded by rainforest.",
-        "description": "One of the largest waterfall systems in the world, featuring hundreds of cascades surrounded by lush rainforest and diverse wildlife.",
+        "description": "Massive waterfalls surrounded by rainforest.",
         "activities": [
             "Sightseeing",
             "Boat tours",
@@ -17,13 +16,12 @@
     },
     {
         "id": "perito-moreno",
-        "name": "Glaciar Perito Moreno",
+        "name": "Glaciar P. Moreno",
         "location": "Santa Cruz",
         "imageUrl": "images/perito-moreno.webp",
         "type": "Nature",
         "climate": "Cold",
-        "shortDescription": "A dynamic glacier with dramatic ice breaks.",
-        "description": "A famous advancing glacier known for its massive ice walls and frequent ice ruptures, offering a unique and powerful natural spectacle.",
+        "description": "A dynamic glacier with dramatic ice breaks.",
         "activities": [
             "Ice trekking",
             "Sightseeing",
@@ -38,8 +36,7 @@
         "imageUrl": "images/bariloche.webp",
         "type": "Mountain",
         "climate": "Cold",
-        "shortDescription": "A mountain town with lakes and alpine views.",
-        "description": "A popular destination known for its lakes, mountains, and winter sports, combining natural beauty with a charming alpine-style town.",
+        "description": "A mountain town with lakes and alpine views.",
         "activities": [
             "Skiing",
             "Hiking",
@@ -54,8 +51,7 @@
         "imageUrl": "images/seis-miles.webp",
         "type": "Adventure",
         "climate": "Dry",
-        "shortDescription": "A high-altitude road through volcanic landscapes.",
-        "description": "A scenic route surrounded by some of the highest volcanoes in the Andes, offering breathtaking views and extreme landscapes.",
+        "description": "A high-altitude road through volcanic landscapes.",
         "activities": [
             "Road trip",
             "Photography",
@@ -70,8 +66,7 @@
         "imageUrl": "images/la-angostura.webp",
         "type": "Nature",
         "climate": "Cold",
-        "shortDescription": "A peaceful village by lakes and forests.",
-        "description": "A quiet and scenic destination surrounded by forests and lakes, ideal for relaxation and outdoor activities in nature.",
+        "description": "A peaceful village by lakes and forests.",
         "activities": [
             "Hiking",
             "Lake tours",
@@ -86,8 +81,7 @@
         "imageUrl": "images/traful.webp",
         "type": "Nature",
         "climate": "Cold",
-        "shortDescription": "A hidden gem with crystal-clear waters.",
-        "description": "A small and tranquil village known for its clear lakes and untouched landscapes, perfect for disconnecting from busy life.",
+        "description": "A hidden gem with crystal-clear waters.",
         "activities": [
             "Kayaking",
             "Fishing",
@@ -102,8 +96,7 @@
         "imageUrl": "images/carlos-paz.webp",
         "type": "City",
         "climate": "Temperate",
-        "shortDescription": "A lively city known for entertainment and nightlife.",
-        "description": "A popular tourist city offering theaters, nightlife, and lake activities, making it a vibrant destination for all ages.",
+        "description": "A lively city known for entertainment and nightlife.",
         "activities": [
             "Nightlife",
             "Theater",
@@ -118,8 +111,7 @@
         "imageUrl": "images/teatro-colon.webp",
         "type": "Cultural",
         "climate": "Temperate",
-        "shortDescription": "One of the world's top opera houses.",
-        "description": "A historic and world-renowned theater known for its exceptional acoustics and architecture, hosting opera, ballet, and concerts.",
+        "description": "One of the world's top opera houses.",
         "activities": [
             "Opera",
             "Guided tours",
@@ -134,8 +126,7 @@
         "imageUrl": "images/jardin-japones.webp",
         "type": "Cultural",
         "climate": "Temperate",
-        "shortDescription": "A serene garden inspired by Japanese design.",
-        "description": "A peaceful space with ponds, bridges, and traditional elements, offering a calm escape within the city.",
+        "description": "A serene garden inspired by Japanese design.",
         "activities": [
             "Walking",
             "Photography",
@@ -150,8 +141,7 @@
         "imageUrl": "images/talampaya.webp",
         "type": "Nature",
         "climate": "Dry",
-        "shortDescription": "Red rock canyons shaped by time.",
-        "description": "A national park known for its towering red rock formations and ancient geological history.",
+        "description": "Red rock canyons shaped by time.",
         "activities": [
             "Sightseeing",
             "Guided tours",
@@ -166,8 +156,7 @@
         "imageUrl": "images/valle-luna.webp",
         "type": "Nature",
         "climate": "Dry",
-        "shortDescription": "A surreal desert landscape like another planet.",
-        "description": "A unique natural park featuring unusual rock formations and landscapes that resemble the surface of the moon.",
+        "description": "A surreal desert landscape like another planet.",
         "activities": [
             "Sightseeing",
             "Cycling",
@@ -182,8 +171,7 @@
         "imageUrl": "images/portezuelo.webp",
         "type": "Mountain",
         "climate": "Dry",
-        "shortDescription": "A scenic mountain road with stunning views.",
-        "description": "A famous route offering panoramic views of valleys and mountains, known for its winding roads and viewpoints.",
+        "description": "A scenic mountain road with stunning views.",
         "activities": [
             "Scenic drives",
             "Photography",
@@ -198,8 +186,7 @@
         "imageUrl": "images/merlo.webp",
         "type": "Nature",
         "climate": "Temperate",
-        "shortDescription": "A calm destination with microclimate benefits.",
-        "description": "A popular spot known for its pleasant climate, mountain views, and opportunities for relaxation and outdoor sports.",
+        "description": "A calm destination with microclimate benefits.",
         "activities": [
             "Hiking",
             "Relax",
@@ -214,8 +201,7 @@
         "imageUrl": "images/san-rafael.webp",
         "type": "Adventure",
         "climate": "Dry",
-        "shortDescription": "Adventure and wine in one destination.",
-        "description": "A region known for its outdoor activities like rafting and its proximity to vineyards and wine experiences.",
+        "description": "Adventure and wine in one destination.",
         "activities": [
             "Rafting",
             "Food tourism",
@@ -230,8 +216,7 @@
         "imageUrl": "images/siete-colores.webp",
         "type": "Nature",
         "climate": "Dry",
-        "shortDescription": "A colorful mountain in northern Argentina.",
-        "description": "A striking natural formation with vibrant layers of minerals creating a rainbow-like mountain.",
+        "description": "A colorful mountain in northern Argentina.",
         "activities": [
             "Sightseeing",
             "Photography",
@@ -246,8 +231,7 @@
         "imageUrl": "images/tandil.webp",
         "type": "City",
         "climate": "Temperate",
-        "shortDescription": "A city known for hills and local food.",
-        "description": "A charming city famous for its landscapes, hiking spots, and traditional food products like cheese and salami.",
+        "description": "A city known for hills and local food.",
         "activities": [
             "Hiking",
             "Food tourism",
@@ -262,8 +246,7 @@
         "imageUrl": "images/peninsula-valdes.webp",
         "type": "Wildlife Reserve",
         "climate": "Arid",
-        "shortDescription": "A world-renowned wildlife sanctuary.",
-        "description": "A UNESCO World Heritage site famous for its rich marine biodiversity, including whales, sea lions, and penguins, offering unique wildlife observation experiences.",
+        "description": "A world-renowned wildlife sanctuary.",
         "activities": [
             "Whale Watching",
             "Wildlife Observation",
@@ -278,8 +261,7 @@
         "imageUrl": "images/las-grutas.webp",
         "type": "Coastal",
         "climate": "Temperate",
-        "shortDescription": "Warm waters and beach life.",
-        "description": "A popular beach destination known for its warm waters and seaside activities during the summer.",
+        "description": "Warm waters and beach life.",
         "activities": [
             "Beach",
             "Swimming",
@@ -294,8 +276,7 @@
         "imageUrl": "images/tafi.webp",
         "type": "Mountain",
         "climate": "Temperate",
-        "shortDescription": "A valley surrounded by mountains and culture.",
-        "description": "A scenic valley offering cultural experiences, local traditions, and beautiful mountain landscapes.",
+        "description": "A valley surrounded by mountains and culture.",
         "activities": [
             "Hiking",
             "Horse riding",
@@ -310,8 +291,7 @@
         "imageUrl": "images/rio-hondo.webp",
         "type": "Relax",
         "climate": "Warm",
-        "shortDescription": "A destination for thermal relaxation.",
-        "description": "A well-known destination for its thermal baths and spa experiences, ideal for rest and wellness.",
+        "description": "A destination for thermal relaxation.",
         "activities": [
             "Spa",
             "Thermal baths",
