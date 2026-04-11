@@ -1,7 +1,7 @@
 [
     {
         "id": "iguazu",
-        "name": "Iguazú Falls",
+        "name": "Cataratas del Iguazú",
         "location": "Misiones",
         "imageUrl": "images/iguazu.webp",
         "type": "Nature",
@@ -17,7 +17,7 @@
     },
     {
         "id": "perito-moreno",
-        "name": "Perito Moreno Glacier",
+        "name": "Glaciar Perito Moreno",
         "location": "Santa Cruz",
         "imageUrl": "images/perito-moreno.webp",
         "type": "Nature",
@@ -49,7 +49,7 @@
     },
     {
         "id": "seis-miles",
-        "name": "Route of the 6000s",
+        "name": "Ruta de los 6000s",
         "location": "Catamarca",
         "imageUrl": "images/seis-miles.webp",
         "type": "Adventure",
@@ -129,7 +129,7 @@
     },
     {
         "id": "jardin-japones",
-        "name": "Japanese Garden",
+        "name": "Jardín Japonés",
         "location": "Buenos Aires",
         "imageUrl": "images/jardin-japones.webp",
         "type": "Cultural",
@@ -161,7 +161,7 @@
     },
     {
         "id": "valle-luna",
-        "name": "Valley of the Moon",
+        "name": "Valle de la Luna",
         "location": "San Juan",
         "imageUrl": "images/valle-luna.webp",
         "type": "Nature",
@@ -225,7 +225,7 @@
     },
     {
         "id": "siete-colores",
-        "name": "Hill of Seven Colors",
+        "name": "Pumamarca",
         "location": "Jujuy",
         "imageUrl": "images/siete-colores.webp",
         "type": "Nature",

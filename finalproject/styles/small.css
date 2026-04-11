@@ -203,10 +203,6 @@ footer {
     padding: 1.5rem 0;
 }
 
-footer p {
-    margin: 0.25rem 0;
-    font-size: 0.9rem;
-}
 
 footer span {
     font-weight: bold;
@@ -488,11 +484,6 @@ input:-webkit-autofill {
     border-bottom: solid 1px var(--text-color-dark);
 }
 
-
-.card-membership p {
-    font-weight: 500;
-}
-
 .card-membership button {
     width: 25%;
     max-width: 125px;
@@ -515,10 +506,7 @@ dialog {
 
 /* Site Plan*/
 
-#color-schema,
-#scenarios,
-#typography,
-#wireframes {
+.centered-section {
     text-align: center;
 }
 
