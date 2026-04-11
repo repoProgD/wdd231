@@ -12,12 +12,16 @@
 
     <!-- Facebook Meta Tags -->
     <meta property="og:title" content="Local Business Siteplan page - Visit Ar">
+    <meta property="og:description"
+        content="Explore Argentina’s most remarkable destinations, from natural wonders to cultural landmarks. Discover, compare, and plan your journey across the country with Visit AR.">
+    <meta property="og:image" content="https://repoprogd.github.io/wdd231/finalproject/my-site.jpg">
     <meta property="og:url" content="https://repoprogd.github.io/wdd231/finalproject/siteplan.html">
 
     <!-- Normalize has to preced other style files-->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
 
     <!-- Google Fonts (Lora & Roboto)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,18 +34,30 @@
 
     <!-- JavaScript files -->
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
 
 </head>
 
 <body>
 
     <header>
+        <img src="images/logo.svg" alt="site logo" width="1" height="1">
         <span>Visit AR</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="nav-button"><a href="index.html">Home</a></li>
+                <li class="nav-button"><a href="destinations.html">Destinations</a></li>
+                <li class="nav-button"><a href="compare.html">Compare</a></li>
+                <li class="nav-button"><a href="subscribe.html">Subscribe</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
         <h1 class="main-title">Website Plan</h1>
-        <section class="centered-section" id="site-name">
+        <section class="main-section" id="site-name">
             <h2>Site Name: Visit AR</h2>
             <p>The name "Visit AR is clear, concise and directly conveys the purpose of the site. The use of "Visit +
                 country"
@@ -50,7 +66,7 @@
                 "visitar" means "to visit", which is a play on words that reinforces the site's purpose.</p>
 
         </section>
-        <section class="centered-section" id="site-purpose">
+        <section class="main-section" id="site-purpose">
 
             <h2>Site Purpose</h2>
             <p>The purpose of this site is to help users discover and explore travel destinations in Argentina.
@@ -58,7 +74,7 @@
                 offers curated recommendations to guide their decision-making</p>
         </section>
 
-        <section class="centered-section" id="scenarios">
+        <section class="main-section" id="scenarios">
             <h2>Scenarios</h2>
             <ul>
                 <li>Which destinations there are available in Argentina?</li>
@@ -66,7 +82,7 @@
             </ul>
         </section>
 
-        <section class="centered-section" id="color-schema">
+        <section class="main-section" id="color-schema">
             <h2>Color Scheme</h2>
             <p>The color scheme for this project is represented by the following HEX codes:</p>
             <ul class="color-list">
@@ -103,15 +119,15 @@
             </ul>
         </section>
 
-        <section class="centered-section" id="typography">
+        <section class="main-section" id="typography">
             <h2>Typography</h2>
             <ul>
-                <li>Heading Font: Lora - Use for all headings</li>
-                <li>Body Font: Roboto - Use for all body text</li>
+                <li><span><strong>Heading Font: Lora</strong></span> - Use for all headings</li>
+                <li><span><strong>Body Font: Roboto</strong></span> - Use for all body text</li>
             </ul>
         </section>
 
-        <section class="centered-section" id="wireframes">
+        <section class="main-section" id="wireframes">
             <h2>Wireframes</h2>
             <figure>
                 <img src="images/wireframe-wide.webp" class="temple-img" alt="wide-sreen wireframe" width="640"
@@ -127,7 +143,6 @@
         </section>
     </main>
 
-
     <footer>
         <div class="quick-contact">
             <p>Av. Los eucaliptos 1237</p>
@@ -135,22 +150,27 @@
             <p>info@visitar.com</p>
             <p>(54) 1234-5678</p>
         </div>
-        <div class="social">
-            <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="Linkedin Profile" width="16"
-                    height="16"></a>
-            <a href="https://github.com" target="_blank"><img src="images/github.svg" alt="Github Repository" width="16"
-                    height="16"></a>
-            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Page" width="16"
-                    height="16"></a>
-            <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram Page" width="16"
-                    height="16"></a>
+
+        <div>
+            <p> © <span id="currentyear"></span>WDD231 Final Project</p>
+            <p><span></span>Diego Ledesma </p>
+            <p><span id="lastModified"></span></p>
         </div>
-        <p> © <span id="currentyear"></span>WDD231 Final Project</p>
-        <p><span></span>Diego Ledesma </p>
-        <a href="siteplan.html" style="color: var(--text-dark2-color); text-decoration: underline;">
-            Website Plan
-        </a>
-        <p><span
+        <div>
+            <a class="site-plan" href="siteplan.html">Website Plan</a>
+
+            <div class="social">
+                <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="Linkedin Profile"
+                        width="16" height="16"></a>
+                <a href="https://github.com" target="_blank"><img src="images/github.svg" alt="Github Repository"
+                        width="16" height="16"></a>
+                <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="Facebook Page"
+                        width="16" height="16"></a>
+                <a href="https://instagram.com" target="_blank"><img src="images/instagram.svg" alt="Instagram Page"
+                        width="16" height="16"></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

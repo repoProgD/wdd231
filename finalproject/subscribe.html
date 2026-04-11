@@ -13,6 +13,9 @@
 
     <!-- Facebook Meta Tags -->
     <meta property="og:title" content="Local Business Subscribe page - Visit Ar">
+    <meta property="og:description"
+        content="Explore Argentina’s most remarkable destinations, from natural wonders to cultural landmarks. Discover, compare, and plan your journey across the country with Visit AR.">
+    <meta property="og:image" content="https://repoprogd.github.io/wdd231/finalproject/my-site.jpg">
     <meta property="og:url" content="https://repoprogd.github.io/wdd231/finalproject/subscribe.html">
 
 
@@ -78,9 +81,9 @@
             <label><input type="radio" name="membership-level" value="premium"> Premium</label>
            
 
-            <p class="description-title">Description</p>
-            <label>Organization Description (optional)
-                <textarea name="organization-description" title="Describe your organization">
+            <p class="description-title">About You</p>
+            <label>Tell us about your preferred trips (optional)
+                <textarea name="about-you" title="Describe your interests" placeholder="e.g. Nature, hiking, food, relaxation...">
             </textarea>
             </label>
 
@@ -96,7 +99,7 @@
             <section class="card-membership">
                 <h3 class="section-title">Basic Membership</h3>
                 <p>Benefits</p>
-                <button data-dialog="basicDialog">See Benefits</button>
+                <button class="blue-button" data-dialog="basicDialog">See Benefits</button>
             </section>
 
             <dialog id="basicDialog">
@@ -117,7 +120,7 @@
             <section class="card-membership">
                 <h3 class="section-title">Explorer Membership</h3>
                 <p>Exclusive Benefits</p>
-                <button data-dialog="explorerDialog">See Benefits</button>
+                <button class="blue-button" data-dialog="explorerDialog">See Benefits</button>
             </section>
 
             <dialog id="explorerDialog">
@@ -138,7 +141,7 @@
             <section class="card-membership">
                 <h3 class="section-title">Premium Membership</h3>
                 <p>Exclusive Benefits</p>
-                <button data-dialog="premiumDialog">See Benefits</button>
+                <button class="blue-button"data-dialog="premiumDialog">See Benefits</button>
             </section>
 
             <dialog id="premiumDialog">
@@ -174,9 +177,7 @@
             <p><span id="lastModified"></span></p>
         </div>
         <div>
-            <a href="siteplan.html" style="color: var(--text-dark2-color); text-decoration: underline;">
-                Website Plan
-            </a>
+            <a class="site-plan" href="siteplan.html">Website Plan</a>
 
             <div class="social">
                 <a href="https://linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="Linkedin Profile" width="16"
