@@ -16,7 +16,6 @@ results.innerHTML = `
     <p><strong>Last Name:</strong> ${last}</p>
     <p><strong>Email:</strong> ${email}</p>
     <p><strong>Phone:</strong> ${phone}</p>
-    <p><strong>Oganization Name:</strong> ${organizationName}</p>
     <p><strong>Membership Level:</strong> ${membershipLevel}</p>
     <p><strong>Submitted:</strong> ${timestamp}</p>
 `;

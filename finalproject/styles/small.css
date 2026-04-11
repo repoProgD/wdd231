@@ -367,6 +367,11 @@ form {
     margin-bottom: 2rem;
 }
 
+form.designOne label {
+    display: block;
+    padding: 0.5rem 0;
+}
+
 form label {
 
     display: block;
