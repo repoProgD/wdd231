@@ -313,7 +313,7 @@ footer span {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 0.5rem;
+    gap: 1rem;
     background-color:  var(--secondary-color);
     padding: 1rem;
     margin: 0;
