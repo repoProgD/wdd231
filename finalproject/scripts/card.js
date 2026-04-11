@@ -11,8 +11,14 @@ export const createCard = (destination, showButton = false) => {
     let location = document.createElement("p");
     location.classList.add("destination-location");
 
-    let activities = document.createElement("p");
-    activities.classList.add("destination-activities");
+    let climate = document.createElement("p");
+    climate.classList.add("destination-climate");
+
+    let type = document.createElement("p");
+    type.classList.add("destination-type");
+
+    let rating = document.createElement("p");
+    rating.classList.add("destination-rating");
 
     name.textContent = destination.name;
 
@@ -20,13 +26,18 @@ export const createCard = (destination, showButton = false) => {
     image.alt = `Image of ${destination.name}`;
     image.loading = 'lazy';
 
-    location.textContent = destination.location;
-    activities.textContent = destination.activities.join(", ");
+    location.textContent = `Location: ${destination.location}`;
+    climate.textContent = `Climate: ${destination.climate}`;
+    type.textContent = `Type: ${destination.type}`;
+    rating.textContent = `Rating: ${destination.rating}`;
+
 
     card.appendChild(name);
     card.appendChild(image);
     card.appendChild(location);
-    card.appendChild(activities);
+    card.appendChild(climate);
+    card.appendChild(type);
+    card.appendChild(rating);
     
 
     if (showButton) {

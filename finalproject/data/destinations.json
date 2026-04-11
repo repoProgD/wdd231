@@ -7,6 +7,7 @@
         "type": "Nature",
         "climate": "Tropical",
         "description": "Massive waterfalls surrounded by rainforest.",
+        "rating": "4.95",
         "activities": [
             "Sightseeing",
             "Boat tours",
@@ -22,6 +23,7 @@
         "type": "Nature",
         "climate": "Cold",
         "description": "A dynamic glacier with dramatic ice breaks.",
+        "rating": "4.82",
         "activities": [
             "Ice trekking",
             "Sightseeing",
@@ -37,6 +39,7 @@
         "type": "Mountain",
         "climate": "Cold",
         "description": "A mountain town with lakes and alpine views.",
+        "rating": "4.74",
         "activities": [
             "Skiing",
             "Hiking",
@@ -52,6 +55,7 @@
         "type": "Adventure",
         "climate": "Dry",
         "description": "A high-altitude road through volcanic landscapes.",
+        "rating": "4.5",
         "activities": [
             "Road trip",
             "Photography",
@@ -67,6 +71,7 @@
         "type": "Nature",
         "climate": "Cold",
         "description": "A peaceful village by lakes and forests.",
+        "rating": "4.86",
         "activities": [
             "Hiking",
             "Lake tours",
@@ -82,6 +87,7 @@
         "type": "Nature",
         "climate": "Cold",
         "description": "A hidden gem with crystal-clear waters.",
+        "rating": "4.6",
         "activities": [
             "Kayaking",
             "Fishing",
@@ -97,6 +103,7 @@
         "type": "City",
         "climate": "Temperate",
         "description": "A lively city known for entertainment and nightlife.",
+        "rating": "4.54",
         "activities": [
             "Nightlife",
             "Theater",
@@ -112,6 +119,7 @@
         "type": "Cultural",
         "climate": "Temperate",
         "description": "One of the world's top opera houses.",
+        "rating": "4.7",
         "activities": [
             "Opera",
             "Guided tours",
@@ -127,6 +135,7 @@
         "type": "Cultural",
         "climate": "Temperate",
         "description": "A serene garden inspired by Japanese design.",
+        "rating": "4.39",
         "activities": [
             "Walking",
             "Photography",
@@ -142,6 +151,7 @@
         "type": "Nature",
         "climate": "Dry",
         "description": "Red rock canyons shaped by time.",
+        "rating": "4.64",
         "activities": [
             "Sightseeing",
             "Guided tours",
@@ -157,6 +167,7 @@
         "type": "Nature",
         "climate": "Dry",
         "description": "A surreal desert landscape like another planet.",
+        "rating": "4.65",
         "activities": [
             "Sightseeing",
             "Cycling",
@@ -172,6 +183,7 @@
         "type": "Mountain",
         "climate": "Dry",
         "description": "A scenic mountain road with stunning views.",
+        "rating": "4.38",
         "activities": [
             "Scenic drives",
             "Photography",
@@ -187,6 +199,7 @@
         "type": "Nature",
         "climate": "Temperate",
         "description": "A calm destination with microclimate benefits.",
+        "rating": "4.28",
         "activities": [
             "Hiking",
             "Relax",
@@ -202,6 +215,7 @@
         "type": "Adventure",
         "climate": "Dry",
         "description": "Adventure and wine in one destination.",
+        "rating": "4.44",
         "activities": [
             "Rafting",
             "Food tourism",
@@ -217,6 +231,7 @@
         "type": "Nature",
         "climate": "Dry",
         "description": "A colorful mountain in northern Argentina.",
+        "rating": "4.12",
         "activities": [
             "Sightseeing",
             "Photography",
@@ -232,6 +247,7 @@
         "type": "City",
         "climate": "Temperate",
         "description": "A city known for hills and local food.",
+        "rating": "4.08",
         "activities": [
             "Hiking",
             "Food tourism",
@@ -247,6 +263,7 @@
         "type": "Wildlife Reserve",
         "climate": "Arid",
         "description": "A world-renowned wildlife sanctuary.",
+        "rating": "4.91",
         "activities": [
             "Whale Watching",
             "Wildlife Observation",
@@ -262,6 +279,7 @@
         "type": "Coastal",
         "climate": "Temperate",
         "description": "Warm waters and beach life.",
+        "rating": "4.44",
         "activities": [
             "Beach",
             "Swimming",
@@ -277,6 +295,7 @@
         "type": "Mountain",
         "climate": "Temperate",
         "description": "A valley surrounded by mountains and culture.",
+        "rating": "4.61",
         "activities": [
             "Hiking",
             "Horse riding",
@@ -292,6 +311,7 @@
         "type": "Relax",
         "climate": "Warm",
         "description": "A destination for thermal relaxation.",
+        "rating": "4.6",
         "activities": [
             "Spa",
             "Thermal baths",

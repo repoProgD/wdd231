@@ -78,11 +78,14 @@
     /*featured destination cards*/
 
     .destination-card {
+        grid-template-columns: auto 1fr;
 
         grid-template-areas:
             "photograph name"
             "photograph location"
-            "photograph activities";
+            "photograph climate"
+            "photograph type"
+            "photograph rating";
     }
     
     .destination-image {

@@ -258,7 +258,7 @@ footer span {
 
 .destination-card {
     margin: 1rem 10px;
-    gap: 1rem;
+    gap: 0.5rem;
     border: 1px solid var(--primary-color);
     border-radius: 6px;
     overflow: hidden;
@@ -270,12 +270,14 @@ footer span {
         "name"
         "photograph"
         "location"
-        "activities";
+        "climate"
+        "type"
+        "rating";
 }
 
 .destination-name {
     font-size: 1.15rem;
-    margin: 1.25rem 10px 0.225rem 0;
+    margin: 0.5rem 5px 0 5px;
     grid-area: name;
 }
 
@@ -285,14 +287,25 @@ footer span {
     grid-area: photograph;
 }
 
-.destination-description {
-    margin: 1rem 10px;
+
+.destination-location {
+    margin: 0.1rem 10px 0 10px;
     grid-area: location;
 }
 
-.destination-activities {
-    margin: 1rem 10px;
-    grid-area: activities;
+.destination-climate {
+    margin: 0.1rem 5px 0 5px;
+    grid-area: climate;
+}
+
+.destination-type {
+    margin: 0.1rem 5px 0 5px;
+    grid-area: type;
+}
+
+.destination-rating {
+    margin: 0.1rem 5px 0 5px;
+    grid-area: rating;
 }
 
 .to-compare {
