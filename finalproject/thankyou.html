@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>Compare - Visit AR</title>
+    <title>Thank You - Visit AR</title>
 
     <!-- Meta Tags -->
     <meta charset="UTF-8">
@@ -11,8 +11,8 @@
     <meta name="description" content="WDD 231 - Web Frontend Development I - Final Project, by Diego Ledesma.">
 
     <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Local Business Compare page - Visit Ar">
-    <meta property="og:url" content="https://repoprogd.github.io/wdd231/finalproject/index.html">
+    <meta property="og:title" content="Local Business Thank You page - Visit Ar">
+    <meta property="og:url" content="https://repoprogd.github.io/wdd231/finalproject/thankyou.html">
 
     <!-- Normalize has to preced other style files-->
     <link rel="stylesheet" href="styles/normalize.css">
@@ -32,9 +32,9 @@
     <!-- JavaScript files -->
     <script src="scripts/getdates.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/compare.js" type="module"></script>
-</head>
+    <script src="scripts/form-data.js" defer></script>
 
+</head>
 <body>
 
     <header>
@@ -44,27 +44,20 @@
 
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li class="nav-button"><a href="index.html">Home</a></li>
+                <li class="nav-button current"><a href="index.html">Home</a></li>
                 <li class="nav-button"><a href="destinations.html">Destinations</a></li>
-                <li class="nav-button  current"><a href="compare.html">Compare</a></li>
+                <li class="nav-button"><a href="compare.html">Compare</a></li>
                 <li class="nav-button"><a href="subscribe.html">Subscribe</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="index-main">
-        <h1 class="main-title">Compare</h1>
-        <div class="table-container">
-            <table id="compare-table">
-                <thead>
-                    <tr id="compare-header">
-                        <th>Property</th>
-                    </tr>
-                </thead>
-                <tbody id="compare-body"></tbody>
-            </table>
-        <div class="table-container"></div>
+    <main>
+        <h1 class="main-title">Thank You</h1>
+        <section id="results"></section>
     </main>
+
+
 
     <footer>
         <div class="quick-contact">
@@ -96,6 +89,5 @@
             </div>
         </div>
     </footer>
-</body>
 
 </html>

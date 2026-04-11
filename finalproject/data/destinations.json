@@ -6,6 +6,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Nature",
         "climate": "Tropical",
+        "shortDescription": "Massive waterfalls surrounded by rainforest.",
+        "description": "One of the largest waterfall systems in the world, featuring hundreds of cascades surrounded by lush rainforest and diverse wildlife.",
         "activities": [
             "Sightseeing",
             "Boat tours",
@@ -20,6 +22,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Nature",
         "climate": "Cold",
+        "shortDescription": "A dynamic glacier with dramatic ice breaks.",
+        "description": "A famous advancing glacier known for its massive ice walls and frequent ice ruptures, offering a unique and powerful natural spectacle.",
         "activities": [
             "Ice trekking",
             "Sightseeing",
@@ -34,6 +38,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Mountain",
         "climate": "Cold",
+        "shortDescription": "A mountain town with lakes and alpine views.",
+        "description": "A popular destination known for its lakes, mountains, and winter sports, combining natural beauty with a charming alpine-style town.",
         "activities": [
             "Skiing",
             "Hiking",
@@ -48,6 +54,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Adventure",
         "climate": "Dry",
+        "shortDescription": "A high-altitude road through volcanic landscapes.",
+        "description": "A scenic route surrounded by some of the highest volcanoes in the Andes, offering breathtaking views and extreme landscapes.",
         "activities": [
             "Road trip",
             "Photography",
@@ -62,6 +70,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Nature",
         "climate": "Cold",
+        "shortDescription": "A peaceful village by lakes and forests.",
+        "description": "A quiet and scenic destination surrounded by forests and lakes, ideal for relaxation and outdoor activities in nature.",
         "activities": [
             "Hiking",
             "Lake tours",
@@ -76,6 +86,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Nature",
         "climate": "Cold",
+        "shortDescription": "A hidden gem with crystal-clear waters.",
+        "description": "A small and tranquil village known for its clear lakes and untouched landscapes, perfect for disconnecting from busy life.",
         "activities": [
             "Kayaking",
             "Fishing",
@@ -90,6 +102,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "City",
         "climate": "Temperate",
+        "shortDescription": "A lively city known for entertainment and nightlife.",
+        "description": "A popular tourist city offering theaters, nightlife, and lake activities, making it a vibrant destination for all ages.",
         "activities": [
             "Nightlife",
             "Theater",
@@ -104,6 +118,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Cultural",
         "climate": "Temperate",
+        "shortDescription": "One of the world's top opera houses.",
+        "description": "A historic and world-renowned theater known for its exceptional acoustics and architecture, hosting opera, ballet, and concerts.",
         "activities": [
             "Opera",
             "Guided tours",
@@ -118,6 +134,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Cultural",
         "climate": "Temperate",
+        "shortDescription": "A serene garden inspired by Japanese design.",
+        "description": "A peaceful space with ponds, bridges, and traditional elements, offering a calm escape within the city.",
         "activities": [
             "Walking",
             "Photography",
@@ -132,6 +150,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Nature",
         "climate": "Dry",
+        "shortDescription": "Red rock canyons shaped by time.",
+        "description": "A national park known for its towering red rock formations and ancient geological history.",
         "activities": [
             "Sightseeing",
             "Guided tours",
@@ -146,6 +166,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Nature",
         "climate": "Dry",
+        "shortDescription": "A surreal desert landscape like another planet.",
+        "description": "A unique natural park featuring unusual rock formations and landscapes that resemble the surface of the moon.",
         "activities": [
             "Sightseeing",
             "Cycling",
@@ -160,6 +182,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Mountain",
         "climate": "Dry",
+        "shortDescription": "A scenic mountain road with stunning views.",
+        "description": "A famous route offering panoramic views of valleys and mountains, known for its winding roads and viewpoints.",
         "activities": [
             "Scenic drives",
             "Photography",
@@ -174,6 +198,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Nature",
         "climate": "Temperate",
+        "shortDescription": "A calm destination with microclimate benefits.",
+        "description": "A popular spot known for its pleasant climate, mountain views, and opportunities for relaxation and outdoor sports.",
         "activities": [
             "Hiking",
             "Relax",
@@ -188,6 +214,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Adventure",
         "climate": "Dry",
+        "shortDescription": "Adventure and wine in one destination.",
+        "description": "A region known for its outdoor activities like rafting and its proximity to vineyards and wine experiences.",
         "activities": [
             "Rafting",
             "Wine tours",
@@ -202,6 +230,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Nature",
         "climate": "Dry",
+        "shortDescription": "A colorful mountain in northern Argentina.",
+        "description": "A striking natural formation with vibrant layers of minerals creating a rainbow-like mountain.",
         "activities": [
             "Sightseeing",
             "Photography",
@@ -216,6 +246,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "City",
         "climate": "Temperate",
+        "shortDescription": "A city known for hills and local food.",
+        "description": "A charming city famous for its landscapes, hiking spots, and traditional food products like cheese and salami.",
         "activities": [
             "Hiking",
             "Food tourism",
@@ -230,6 +262,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Coastal",
         "climate": "Temperate",
+        "shortDescription": "A quiet coastal escape.",
+        "description": "A peaceful seaside destination ideal for relaxing, fishing, and enjoying uncrowded beaches.",
         "activities": [
             "Beach",
             "Fishing",
@@ -244,6 +278,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Coastal",
         "climate": "Temperate",
+        "shortDescription": "Warm waters and beach life.",
+        "description": "A popular beach destination known for its warm waters and seaside activities during the summer.",
         "activities": [
             "Beach",
             "Swimming",
@@ -258,6 +294,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Mountain",
         "climate": "Temperate",
+        "shortDescription": "A valley surrounded by mountains and culture.",
+        "description": "A scenic valley offering cultural experiences, local traditions, and beautiful mountain landscapes.",
         "activities": [
             "Hiking",
             "Horse riding",
@@ -272,6 +310,8 @@
         "imageUrl": "images/place-holder.webp",
         "type": "Relax",
         "climate": "Warm",
+        "shortDescription": "A destination for thermal relaxation.",
+        "description": "A well-known destination for its thermal baths and spa experiences, ideal for rest and wellness.",
         "activities": [
             "Spa",
             "Thermal baths",

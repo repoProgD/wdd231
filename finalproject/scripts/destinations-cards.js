@@ -1,51 +1,87 @@
 import { getDestinations } from "./fetch.js";
 import { createCard } from "./card.js";
 
+const selectedList = document.querySelector("#selected-summary");
 const container = document.querySelector('#random-destinations');
 
-const selected = JSON.parse(localStorage.getItem("compare")) || [];
+const getSelected = () => JSON.parse(localStorage.getItem("compare")) || [];
+
+const updateUI = () => {
+    let selected = getSelected();
+
+    let allButtons = document.querySelectorAll(".to-compare");
+    allButtons.forEach(button => {
+        let id = button.dataset.id;
+
+        if (selected.includes(id)) {
+            button.textContent = "Added";
+            button.classList.add("selected-btn");
+        }
+
+        else {
+            button.textContent = "Compare";
+            button.classList.remove("selected-btn");
+        }
+    });
+
+    renderSelectedSummary(selected);
+};
+
+const renderSelectedSummary = (selectedIds) => {
+    if (selectedIds.length === 0) {
+        selectedList.innerHTML = "";
+        return;
+    }
+
+    selectedList.innerHTML = `
+        <div class="selection-bar">
+            <p>Destinations selected: <strong>${selectedIds.length} / 3</strong></p>
+            <button id="clear-all" class="clear-button">Clear All</button>
+        </div>
+
+    `;
+
+    document.querySelector("#clear-all").addEventListener("click", () => {
+        localStorage.removeItem("compare");
+        updateUI();
+    });
+};
+
+
 
 const displayDestinations = (featuredDestinations) => {
-    featuredDestinations.forEach((destination) => {
-        
+    container.innerHTML = "";
+
+    featuredDestinations.forEach(destination => {
         const card = createCard(destination, true);
         const button = card.querySelector(".to-compare");
-
-        if (selected.includes(destination.id)) {
-            button.textContent = "Added";
-        }
-
-        if (selected.includes(destination.id)) { 
-            button.textContent = "Added";
-        }
-
+        
         button.addEventListener("click", () => {
-            
-            if (selected.includes(destination.id)) { 
-                let index = selected.indexOf(destination.id);
-                selected.splice(index, 1);
+            let selected = getSelected();
 
-                button.textContent = "Compare";
+            if (selected.includes(destination.id)) {
+                selected = selected.filter(id => id !== destination.id);
             }
 
-            else { 
+            else {
                 if (selected.length >= 3) {
                     alert("You can only compare up to 3 destinations");
                     return;
                 }
                 selected.push(destination.id);
-                button.textContent = "Added";
             }
 
-
-            
             localStorage.setItem("compare", JSON.stringify(selected));
-            
+            updateUI();
+
         });
 
         container.appendChild(card);
     });
+
+    updateUI();
 };
+        
 
 const getRandomDestinations = (destinations, count = 15) => {
     let shuffled = [...destinations].sort(() => 0.5 - Math.random());
@@ -53,10 +89,18 @@ const getRandomDestinations = (destinations, count = 15) => {
 }
 
 const init = async () => {
-    let data = await getDestinations();
+    try {
+        let data = await getDestinations();
+        let randomDestinations = getRandomDestinations(data, 15);
+        displayDestinations(randomDestinations);
 
-    let randomDestinations = getRandomDestinations(data, 15);
-    displayDestinations(randomDestinations);
+    }
+
+    catch (error) { 
+        console.error("Error fetching destinations:", error);
+        container.innerHTML = "<p> Error loading destinations. Please try again.</p>";
+    }
+    
 };
 
 init();

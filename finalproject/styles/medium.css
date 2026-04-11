@@ -63,38 +63,67 @@
     /*Home rules*/
         /*purpose section*/
 
-        .purpose{
-            grid-template-columns: 1fr 1fr;
-            column-gap: 2rem;
-            align-items: center;
-        }
+    .purpose{
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+        align-items: center;
+    }
 
 
-        .figure-purpose{
-            justify-content: center;
-        }
+    .figure-purpose{
+        justify-content: center;
+    }
 
-        /*featured destination cards*/
 
-        .destination-card {
+    /*featured destination cards*/
 
-            grid-template-areas:
-                "photograph name"
-                "photograph location"
-                "photograph activities";
-        }
-        
-        .destination-image {
-            width: 250px;
-            height: auto;
-        }
+    .destination-card {
 
-        .cards-container {
-            display: grid;
-            grid-template-columns: 1fr;
-            max-width: 500px;
-            align-items: center;
+        grid-template-areas:
+            "photograph name"
+            "photograph location"
+            "photograph activities";
+    }
     
-        }
+    .destination-image {
+        width: 250px;
+        height: auto;
+    }
 
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 500px;
+        align-items: center;
+
+    }
+
+    /* Form Page */
+  
+    .join-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+        max-width: 900px;
+        margin: 2rem auto 0 auto;
+        padding: 0 2rem 2rem 2rem;
+        
+    }
+
+    .join-main h1 {
+        grid-column: 1 / -1;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .card-membership button {
+        width: 32%;
+        max-width: 125px;
+        margin: 0 auto 0.5rem auto;
+    }
+
+    .subscribe-limited {
+        max-width: 900px;
+    }
 }
